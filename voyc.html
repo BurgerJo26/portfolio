@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voyc · Self-service onboarding — Joané Burger</title>
+  <meta name="description" content="Case study: redesigning the onboarding flow for an AI compliance monitoring platform. 70% reduction in setup time, 40% reduction in onboarding calls.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,30..100;1,9..144,300..700,30..100&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page">
+  <div class="wrap">
+
+    <header class="topbar">
+      <a href="index.html" class="brand">Joané <em>Burger</em></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="mailto:joane.burger@gmail.com">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="cs-layout">
+
+      <!-- Sticky side nav -->
+      <aside class="cs-nav">
+        <a href="index.html" class="back">← All work</a>
+        <span class="nav-label">On this page</span>
+        <ol>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#problem">The problem</a></li>
+          <li><a href="#discovery">Discovery</a></li>
+          <li><a href="#change">The redesign</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#reflection">Reflection</a></li>
+        </ol>
+      </aside>
+
+      <!-- Main content -->
+      <main class="cs-main">
+
+        <!-- Header -->
+        <section class="cs-header">
+          <div class="meta">
+            <span>Case Study 01</span>
+            <span>Voyc · AI Compliance Monitoring</span>
+            <span>Oct 2022 — Oct 2024</span>
+            <span>Senior Product Designer</span>
+          </div>
+          <h1>Reducing churn by <em>50%</em> by redesigning an AI platform's onboarding flow.</h1>
+          <p class="tagline">
+            I replaced a five-call, five-hour manual setup process with a guided in-app experience &mdash; cutting setup time from 5 hours to 1.5, and time-to-value from 6 months to 64 days.
+          </p>
+        </section>
+
+        <!-- Hero image -->
+        <div class="cs-hero-img">Homepage dashboard — final design</div>
+
+        <!-- Stats -->
+        <div class="stats">
+          <div class="stat">
+            <div class="num">↓<em>70</em>%</div>
+            <div class="label">Setup time — from 5 hours to 1.5</div>
+          </div>
+          <div class="stat">
+            <div class="num">↓<em>40</em>%</div>
+            <div class="label">Onboarding calls — from 5 to 3</div>
+          </div>
+          <div class="stat">
+            <div class="num"><em>64</em> days</div>
+            <div class="label">Time to value — down from 1.5–6 months</div>
+          </div>
+        </div>
+
+        <!-- Overview -->
+        <section id="overview" class="cs-section">
+          <span class="eyebrow">01 — Overview</span>
+          <h2>The TL;DR</h2>
+          <p>
+            Voyc is a UK-based startup that uses AI to monitor 100% of call-center conversations for compliance breaches &mdash; a product that pays for itself the moment it catches a single mis-selling event. But customers weren't getting to that moment fast enough. New clients were stuck in onboarding for up to six months before they could run a single script check, and our Customer Success team was drowning in repetitive setup calls.
+          </p>
+          <p>
+            As the first product designer at Voyc, I led the end-to-end redesign of onboarding: from user research and journey mapping through to a shipped in-app self-service flow. This is the story of how that happened.
+          </p>
+
+          <div class="pull">
+            <p>"We had customers on the verge of cancellation because they hadn't seen value yet. Every new client was burning Customer Success hours we didn't have."</p>
+          </div>
+        </section>
+
+        <!-- PROBLEM -->
+        <section id="problem" class="cs-section">
+          <span class="eyebrow">02 — Problem</span>
+          <h2>Onboarding was taking <em>months</em>, not minutes.</h2>
+
+          <p>
+            Every new Voyc customer had to go through up to five 45-minute onboarding calls, plus roughly five hours of manual setup support. For a product that sells itself on speed of insight, this was the wrong first impression &mdash; and it was putting real revenue at risk.
+          </p>
+
+          <p>Three things, specifically, were going wrong:</p>
+
+          <h3>Manual onboarding bottlenecks</h3>
+          <p>The setup process depended on call after call with our Customer Success team. Customers couldn't move forward without us, and we couldn't scale without fixing that dependency.</p>
+
+          <h3>No in-app guidance</h3>
+          <p>Help content lived in a hidden side-nav and had to be hunted for. When a user hit confusion &mdash; which happened often, given the complexity of compliance scripting &mdash; their only option was to open a support ticket.</p>
+
+          <h3>No visibility of progress</h3>
+          <p>Users had no idea how far into setup they were, what came next, or whether they were nearly done. The uncertainty bred support queries of its own: "Am I doing this right?"</p>
+
+          <div class="cs-figure">Figure — Journey map of the original five-call onboarding flow</div>
+        </section>
+
+        <!-- DISCOVERY -->
+        <section id="discovery" class="cs-section">
+          <span class="eyebrow">03 — Discovery</span>
+          <h2>Six research moves to pinpoint the friction.</h2>
+
+          <p>
+            Before designing anything, I needed to know exactly where the journey was breaking down &mdash; not from assumption, but from evidence. I ran six research activities in parallel:
+          </p>
+
+          <ul>
+            <li>Sat in on live onboarding sessions to watch customers struggle in real time</li>
+            <li>Conducted user interviews with customers at different points in the setup journey</li>
+            <li>Analysed support tickets to find the repeat offenders</li>
+            <li>Ran stakeholder workshops with Customer Success, Sales, and Engineering</li>
+            <li>Affinity-mapped everything in FigJam to cluster the pain points</li>
+            <li>Facilitated a prioritisation session to agree what we'd tackle first</li>
+          </ul>
+
+          <p>
+            What emerged was that the pain wasn't one big problem &mdash; it was a fragmented chain of small frictions, each of which would have been easy to fix alone but which compounded into a six-month slog. That told me the answer wasn't a better manual process. It was a self-service, in-app flow that aligned with how customers actually thought about getting started.
+          </p>
+
+          <figure>
+            <div class="cs-figure">FigJam board — clustered pain points from discovery</div>
+            <figcaption>Figure 01 — Discovery synthesis showing four pain clusters: missing guidance, support bottlenecks, usability issues, time-to-value delays.</figcaption>
+          </figure>
+        </section>
+
+        <!-- CHANGE -->
+        <section id="change" class="cs-section">
+          <span class="eyebrow">04 — The redesign</span>
+          <h2>Three moves that turned a service problem into a <em>product</em>.</h2>
+
+          <h3>01 — An in-app onboarding checklist, visible from day one</h3>
+          <p>
+            I placed a live progress dashboard on the homepage: a completion score, an ordered list of setup tasks with effort indicators, and a floating checklist that persisted across screens. Users now knew exactly what to do next, how much was left, and how much effort each step would take.
+          </p>
+
+          <div class="before-after">
+            <div class="ba-card">
+              <div class="ba-label">Before</div>
+              <div class="ba-body">No visible progress. Users relied on calls with Customer Success to understand what to do next.</div>
+            </div>
+            <div class="ba-card is-after">
+              <div class="ba-label">After</div>
+              <div class="ba-body">A persistent checklist, completion score, and effort tags &mdash; visible from the homepage down.</div>
+            </div>
+          </div>
+
+          <h3>02 — Help content, embedded where users need it</h3>
+          <p>
+            Contextual tooltips, inline setup guides, and a redesigned Help &amp; Info Hub surfaced the right resources at the right moment. Help stopped being a destination and became a behaviour of the interface itself.
+          </p>
+
+          <div class="cs-figure">Figure — Embedded contextual help patterns</div>
+
+          <h3>03 — A validated service flow before any code shipped</h3>
+          <p>
+            I built the new flow as a service-level journey first, then tested it live during manual onboarding sessions with the Learning Experience team. That let us refine the logic with real customers before a single engineer touched it &mdash; saving build cost and catching problems our in-app prototypes would have missed.
+          </p>
+
+          <figure>
+            <div class="cs-figure is-wide">Figure — Final onboarding flow diagram</div>
+            <figcaption>Figure 02 — The validated onboarding flow after three iterations with live customers.</figcaption>
+          </figure>
+        </section>
+
+        <!-- RESULTS / RETROSPECTIVE -->
+        <section id="results" class="cs-section">
+          <span class="eyebrow">05 — Results</span>
+          <h2>From six months to <em>64 days</em>.</h2>
+
+          <p>
+            The numbers matter because they represent real customers reaching real value faster &mdash; and a Customer Success team that finally had time for strategic work instead of setup calls.
+          </p>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="num">↓<em>70</em>%</div>
+              <div class="label">Setup time reduced from 5 hours to 1.5 hours per customer</div>
+            </div>
+            <div class="stat">
+              <div class="num">↓<em>40</em>%</div>
+              <div class="label">Onboarding calls reduced from 5 to 3 (45 min each)</div>
+            </div>
+            <div class="stat">
+              <div class="num"><em>64</em> days</div>
+              <div class="label">Time-to-value down from 1.5–6 months to just over 9 weeks</div>
+            </div>
+          </div>
+
+          <p>
+            Critically, the change stuck. The self-service flow scaled cleanly with new customer growth, and Customer Success was finally freed up to do the strategic work the product's growth needed.
+          </p>
+        </section>
+
+        <!-- REFLECTION -->
+        <section id="reflection" class="cs-section">
+          <span class="eyebrow">06 — Reflection</span>
+          <h2>What this project <em>taught</em> me.</h2>
+
+          <h3>The best onboarding redesign isn't a design project &mdash; it's a service redesign</h3>
+          <p>
+            If I'd approached this as "make the in-app flow better," we'd have shipped prettier screens and saved maybe a call or two. The 70% win came from treating onboarding as a cross-functional service &mdash; Customer Success, Learning Experience, Product, Engineering &mdash; with the UI as one layer of a bigger system.
+          </p>
+
+          <h3>Deep discovery de-risks everything that follows</h3>
+          <p>
+            Six research activities felt excessive at the start. It was, in hindsight, exactly the right amount. Every design decision downstream was defensible because we could point to specific evidence behind it. Prioritisation became faster, not slower.
+          </p>
+
+          <h3>Validating before shipping saves build cost, not design cost</h3>
+          <p>
+            The move I'm most proud of wasn't a screen &mdash; it was running the new flow as a live manual script with real customers before we built anything. That turned engineering from a guessing game into execution.
+          </p>
+        </section>
+
+        <!-- Next -->
+        <a href="capitec.html" class="cs-next">
+          <span class="eyebrow">Next Case Study</span>
+          <h3>Redesigning business banking flows to cut <em>cognitive load</em> and user errors →</h3>
+        </a>
+
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <span style="font-family: var(--font-mono); font-size: var(--size-xs); letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted);">Get in touch</span>
+          <h2 style="margin-top: var(--sp-2);">Have a <em>complex</em> problem worth solving?</h2>
+        </div>
+        <div>
+          <a href="mailto:joane.burger@gmail.com" class="contact-link">joane.burger@gmail.com</a>
+          <p style="margin-top: var(--sp-3); color: var(--muted); font-size: var(--size-sm);">
+            Available for senior product design roles, EU-remote. Usually reply within a day.
+          </p>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <span>© 2026 — Designed &amp; built by Joané <span class="signature">Burger</span></span>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/joane-burger-a52912117" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:joane.burger@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
