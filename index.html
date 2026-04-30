@@ -5,10 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joané Burger — Senior Product Designer</title>
   <meta name="description" content="Senior product designer for complex, high-stakes software. Fintech, AI compliance, healthcare. Based in the Netherlands, available for EU-remote roles.">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,30..100;1,9..144,300..700,30..100&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,10 +14,13 @@
 
     <!-- Top bar -->
     <header class="topbar">
-      <a href="index.html" class="brand">Joané <em>Burger</em></a>
+      <a href="index.html" class="brand">
+        <span class="brand-mark">JB</span>
+        <span>joané burger</span>
+      </a>
       <nav>
         <ul class="nav-links">
-          <li><a href="index.html" class="active">Work</a></li>
+          <li><a href="index.html" class="is-active">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="mailto:joane.burger@gmail.com">Contact</a></li>
         </ul>
@@ -30,125 +29,149 @@
 
     <!-- Hero -->
     <section class="hero">
-      <span class="eyebrow rise rise-1">Senior Product Designer · Bussum, NL</span>
-      <h1 class="rise rise-2">Designing for the <em>complex</em>, the <em>critical</em>, the consequential.</h1>
-      <p class="lede rise rise-3">
-        Six years turning messy, high-stakes software &mdash; AI compliance, business banking, healthcare &mdash; into products people trust and actually use.
-      </p>
-      <p class="subline rise rise-4">
-        Previously the first product designer at Voyc (AI compliance monitoring). I work in the AI era the way I work in any era: fluent with the tools, focused on the humans.
-      </p>
+      <span class="eyebrow">Designing for the high-stakes</span>
+      <h1>I design <em>complex software</em> that people actually use.</h1>
+      <p class="lede">Senior product designer with six years across AI compliance, business banking, and healthcare.</p>
+      <p class="meta-line">Previously the first product designer at <strong>Voyc</strong> (AI compliance monitoring). Earlier work at Capitec, Discovery, and Retro Rabbit.</p>
+      <div class="hero-actions">
+        <a href="mailto:joane.burger@gmail.com" class="btn-primary">
+          Get in touch <span class="arrow">↗</span>
+        </a>
+        <span class="location-line">Based in Bussum, NL · working remotely</span>
+      </div>
     </section>
 
-    <!-- Work -->
+    <!-- Marquee strip -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>AI Compliance</span><span class="dot">·</span>
+        <span>Business Banking</span><span class="dot">·</span>
+        <span>Healthcare</span><span class="dot">·</span>
+        <span>Design Systems</span><span class="dot">·</span>
+        <span>End-to-End Product</span><span class="dot">·</span>
+        <span>UX Research</span><span class="dot">·</span>
+        <span>Cross-functional</span><span class="dot">·</span>
+        <!-- duplicate for seamless loop -->
+        <span>AI Compliance</span><span class="dot">·</span>
+        <span>Business Banking</span><span class="dot">·</span>
+        <span>Healthcare</span><span class="dot">·</span>
+        <span>Design Systems</span><span class="dot">·</span>
+        <span>End-to-End Product</span><span class="dot">·</span>
+        <span>UX Research</span><span class="dot">·</span>
+        <span>Cross-functional</span><span class="dot">·</span>
+      </div>
+    </div>
+
+    <!-- Philosophies -->
+    <section>
+      <div class="section-intro">
+        <span class="label">My design philosophies</span>
+        <h2>Curious, <em>methodical</em>, and outcome-driven.</h2>
+      </div>
+      <div class="philosophies">
+        <div class="phil-card">
+          <span class="num">01</span>
+          <h3>Asking why, then why again</h3>
+          <p>Most design problems hide a deeper one. I dig until I find the actual job to be done — for both users and the business.</p>
+        </div>
+        <div class="phil-card">
+          <span class="num">02</span>
+          <h3>Trust is a UX feature</h3>
+          <p>In regulated, high-consequence software, the interface carries trust. Every pattern, label, and transition either builds it or erodes it.</p>
+        </div>
+        <div class="phil-card">
+          <span class="num">03</span>
+          <h3>Design at the speed of evidence</h3>
+          <p>I prototype fast and validate faster — because the cheapest way to be right is to be honestly wrong early.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work -->
     <section id="work">
-      <div class="section-head">
-        <span class="label">Selected Work</span>
-        <span class="count">2025 &mdash; 2026</span>
+      <div class="section-intro">
+        <span class="label">Selected work</span>
+        <h2>Case <em>studies.</em></h2>
+        <p class="lead">Two projects that show how I work: deep research, focused design decisions, and outcomes that move both users and the business.</p>
       </div>
 
       <div class="work-list">
 
-        <!-- Case Study 1: Voyc -->
-        <a href="voyc.html" class="work-item">
-          <div class="meta">
-            <span>01</span>
-            <span class="sep"></span>
-            <span>Voyc</span>
-            <span class="sep"></span>
-            <span>AI Compliance · B2B SaaS</span>
+        <!-- Voyc -->
+        <a href="voyc.html" class="work-card">
+          <div class="preview bg-cream">
+            <span class="ph">Voyc · onboarding redesign</span>
           </div>
-          <h3>Reducing customer churn by <em>50%</em> by cutting AI platform setup from days to hours</h3>
-          <p class="summary">
-            I led the redesign of Voyc's onboarding for call-center compliance teams, replacing a five-call, five-hour manual setup with a guided in-app flow. Setup time dropped 70%, support calls 40%, time-to-value from six months to 64 days.
-          </p>
-          <div class="tags">
-            <span class="tag">AI Product</span>
-            <span class="tag">Onboarding</span>
-            <span class="tag">Research</span>
-            <span class="tag">Design Systems</span>
+          <div class="work-info">
+            <div class="meta">
+              <span>01</span><span>Voyc</span><span>AI Compliance · B2B SaaS</span><span>2022–2024</span>
+            </div>
+            <h3>Reducing customer churn by <em>50%</em> by cutting AI platform setup from days to hours.</h3>
+            <p>I led the redesign of Voyc's onboarding for call-center compliance teams, replacing a five-call manual setup with a guided in-app flow. Setup time dropped 70%, support calls 40%, time-to-value from six months to 64 days.</p>
+            <span class="read-more">Read full project →</span>
           </div>
-          <span class="arrow">↗</span>
         </a>
 
-        <!-- Case Study 2: Capitec -->
-        <a href="capitec.html" class="work-item">
-          <div class="meta">
-            <span>02</span>
-            <span class="sep"></span>
-            <span>Capitec Bank</span>
-            <span class="sep"></span>
-            <span>Fintech · Enterprise</span>
+        <!-- Capitec — flipped -->
+        <a href="capitec.html" class="work-card flip">
+          <div class="preview bg-sky">
+            <span class="ph">Capitec · business banking</span>
           </div>
-          <h3>Redesigning business banking flows to cut <em>cognitive load</em> and user errors</h3>
-          <p class="summary">
-            I rebuilt Capitec's beneficiary and multi-payment flows from chaotic, confidence-eroding screens into focused, step-by-step journeys &mdash; so business users could move money quickly without fear of a costly mistake.
-          </p>
-          <div class="tags">
-            <span class="tag">Enterprise UX</span>
-            <span class="tag">Fintech</span>
-            <span class="tag">Trust &amp; Safety</span>
-            <span class="tag">User Testing</span>
+          <div class="work-info">
+            <div class="meta">
+              <span>02</span><span>Capitec Bank</span><span>Fintech · Enterprise</span><span>2020–2022</span>
+            </div>
+            <h3>Cutting <em>cognitive load</em> in business banking flows that users were avoiding.</h3>
+            <p>I rebuilt Capitec's beneficiary and multi-payment flows from chaotic, confidence-eroding screens into focused, step-by-step journeys — so business users could move money quickly without fear of a costly mistake.</p>
+            <span class="read-more">Read full project →</span>
           </div>
-          <span class="arrow">↗</span>
         </a>
-
-        <!-- Case Study 3: Upcoming / AI project -->
-        <div class="work-item is-upcoming">
-          <div class="meta">
-            <span>03</span>
-            <span class="sep"></span>
-            <span class="upcoming-tag">In progress</span>
-          </div>
-          <h3>Shipping a product end-to-end with an <em>AI-augmented</em> workflow</h3>
-          <p class="summary">
-            A passion project I'm building solo &mdash; and documenting how I use Cursor, v0, Figma Make and Claude across design, prototyping, and shipping. A case study on modern craft, expected soon.
-          </p>
-          <div class="tags">
-            <span class="tag">AI-augmented design</span>
-            <span class="tag">Solo ship</span>
-            <span class="tag">Live write-up</span>
-          </div>
-        </div>
 
       </div>
+    </section>
+
+    <!-- Mid-page philosophy banner -->
+    <section class="banner">
+      <h2>Senior product designer for <em>regulated, high-stakes</em> software.</h2>
+      <p>I'm at my best when the problem is messy, the stakes are real, and the right answer can't be guessed. I work fluently with the modern AI stack — Cursor, v0, Figma Make, Claude — but I hold strong views on where it should and shouldn't go in design.</p>
     </section>
 
     <!-- About preview -->
-    <section class="about-preview">
+    <section class="home-about">
       <div>
-        <span class="label" style="font-family: var(--font-mono); font-size: var(--size-xs); letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted);">About</span>
-        <h2 style="margin-top: var(--sp-2);">Art school, then AI <em>compliance</em>.</h2>
+        <span class="label">About</span>
+        <h2>Hello — I'm <em>Joané</em>.</h2>
+        <a href="about.html" class="read-more" style="display: inline-flex; align-items: center; gap: 0.45rem; margin-top: var(--sp-3); font-weight: 500; color: var(--ink); border-bottom: 1.5px solid var(--ink); padding-bottom: 2px; align-self: start;">More about me →</a>
       </div>
-      <div>
-        <p class="body">
-          I came to product design the long way &mdash; Honours in Fine Arts, a graphic-design diploma (cum laude), video editing, then UX. The path means I think about products the way I think about objects: what they're made of, who touches them, how they hold up.
-        </p>
-        <p class="body" style="margin-top: var(--sp-2);">
-          Today I work at the intersection of regulated domains and emerging tech. Fintech and healthcare paid the rent; AI compliance at Voyc taught me how much trust a good interface can carry when the stakes are high.
-        </p>
-        <a href="about.html" class="read-link">More about me <span>→</span></a>
+      <div class="about-grid">
+        <div class="about-photo">Portrait — 4:5</div>
+        <div class="about-body">
+          <h4>Art school, then AI compliance.</h4>
+          <p>I came to product design the long way — Honours in Fine Arts, a graphic-design diploma (cum laude), video editing, then UX. The path means I think about products the way I think about objects: what they're made of, who touches them, how they hold up.</p>
+          <p>Today I work at the intersection of regulated domains and emerging tech. Fintech and healthcare paid the rent; AI compliance at Voyc taught me how much trust a good interface can carry when the stakes are high.</p>
+          <div class="about-stat">
+            <span class="num">6+</span>
+            <span class="label">Years designing complex software across fintech, AI compliance, and healthcare</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Footer / Contact -->
+    <!-- Footer -->
     <footer class="footer">
-      <div class="footer-grid">
+      <div class="footer-cta">
         <div>
-          <span style="font-family: var(--font-mono); font-size: var(--size-xs); letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted);">Get in touch</span>
+          <span class="label" style="font-size: var(--fs-sm); font-weight: 500; color: var(--muted);">Get in touch</span>
           <h2 style="margin-top: var(--sp-2);">Have a <em>complex</em> problem worth solving?</h2>
         </div>
         <div>
-          <a href="mailto:joane.burger@gmail.com" class="contact-link">joane.burger@gmail.com</a>
-          <p style="margin-top: var(--sp-3); color: var(--muted); font-size: var(--size-sm);">
-            Available for senior product design roles, EU-remote. Usually reply within a day.
-          </p>
+          <a href="mailto:joane.burger@gmail.com" class="email">joane.burger@gmail.com</a>
+          <p class="reply">Available for senior product design roles, EU-remote. Usually reply within a day.</p>
         </div>
       </div>
-
       <div class="footer-meta">
-        <span>© 2026 — Designed &amp; built by Joané <span class="signature">Burger</span></span>
-        <div class="socials">
+        <span>© 2026 Joané Burger</span>
+        <div class="links">
           <a href="https://www.linkedin.com/in/joane-burger-a52912117" target="_blank" rel="noopener">LinkedIn</a>
           <a href="mailto:joane.burger@gmail.com">Email</a>
         </div>
