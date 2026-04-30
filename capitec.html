@@ -4,11 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Capitec · Beneficiary group redesign — Joané Burger</title>
-  <meta name="description" content="Case study: redesigning business banking flows to reduce cognitive load and user errors. A senior product design piece for regulated fintech.">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,30..100;1,9..144,300..700,30..100&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <meta name="description" content="Case study: redesigning business banking flows to reduce cognitive load and user errors.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,10 +13,13 @@
   <div class="wrap">
 
     <header class="topbar">
-      <a href="index.html" class="brand">Joané <em>Burger</em></a>
+      <a href="index.html" class="brand">
+        <span class="brand-mark">JB</span>
+        <span>joané burger</span>
+      </a>
       <nav>
         <ul class="nav-links">
-          <li><a href="index.html" class="active">Work</a></li>
+          <li><a href="index.html" class="is-active">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="mailto:joane.burger@gmail.com">Contact</a></li>
         </ul>
@@ -29,20 +28,19 @@
 
     <div class="cs-layout">
 
-      <!-- Sticky side nav -->
+      <!-- Sticky left nav -->
       <aside class="cs-nav">
         <a href="index.html" class="back">← All work</a>
         <span class="nav-label">On this page</span>
         <ol>
           <li><a href="#overview">Overview</a></li>
           <li><a href="#problem">The problem</a></li>
-          <li><a href="#change-groups">Beneficiary groups</a></li>
-          <li><a href="#change-payments">Multi-payments</a></li>
-          <li><a href="#reflection">Reflection</a></li>
+          <li><a href="#challenges">Challenges</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#lessons">Lessons</a></li>
         </ol>
       </aside>
 
-      <!-- Main content -->
       <main class="cs-main">
 
         <!-- Header -->
@@ -53,148 +51,174 @@
             <span>Oct 2020 — Oct 2022</span>
             <span>UX Designer</span>
           </div>
-          <h1>Redesigning business banking flows to cut <em>cognitive load</em> and user errors.</h1>
-          <p class="tagline">
-            How I helped rebuild Capitec's most trust-sensitive screens &mdash; beneficiary groups and multi-payments &mdash; from chaotic, confidence-eroding interfaces into focused journeys users could move through without fear.
-          </p>
+          <h1>Cutting <em>cognitive load</em> in business banking flows.</h1>
+          <p class="tagline">How I helped rebuild Capitec's most trust-sensitive screens — beneficiary groups and multi-payments — from chaotic, confidence-eroding interfaces into focused journeys users could move through without fear.</p>
         </section>
 
+        <!-- Project meta grid -->
+        <div class="proj-meta">
+          <div>
+            <h4>My role</h4>
+            <ul>
+              <li>UX &amp; UI design</li>
+              <li>Prototyping</li>
+              <li>User-testing coordination</li>
+              <li>Stakeholder communication</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Deliverables</h4>
+            <ul>
+              <li>Redesigned beneficiary group flow</li>
+              <li>Redesigned multi-payment flow</li>
+              <li>Component pattern updates</li>
+              <li>Design documentation</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Team</h4>
+            <ul>
+              <li>3 designers (incl. me)</li>
+              <li>3 developers</li>
+              <li>3 business analysts</li>
+              <li>2 system analysts</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Timeline</h4>
+            <ul>
+              <li>2 years</li>
+              <li>Iterative releases</li>
+              <li>Rebrand-aligned</li>
+            </ul>
+          </div>
+        </div>
+
         <!-- Hero image -->
-        <div class="cs-hero-img">Business banking portal — redesigned home dashboard</div>
+        <div class="cs-hero-img bg-sky">
+          <span class="ph">Business banking portal — redesigned home dashboard</span>
+        </div>
 
         <!-- Overview -->
         <section id="overview" class="cs-section">
           <span class="eyebrow">01 — Overview</span>
-          <h2>The TL;DR</h2>
-          <p>
-            Capitec's legacy business banking portal had a clarity problem. Business users &mdash; finance officers, bookkeepers, owners of small-to-medium enterprises &mdash; were making large, irreversible financial decisions on an interface that overwhelmed them with choices, buried critical actions, and used patterns that contradicted themselves from one screen to the next.
-          </p>
-          <p>
-            I worked as part of a three-designer team on the portal's rebrand and rebuild, with a focus on two of its highest-stakes flows: <strong>beneficiary group creation</strong> and <strong>multi-payments</strong>. The goal wasn't to ship something prettier. It was to build trust at the exact moments users were most likely to make a costly mistake.
-          </p>
+          <h2>The legacy portal was eroding <em>trust</em> at the worst moments.</h2>
+          <p class="lead">Capitec's legacy business banking portal had a clarity problem. Business users — finance officers, bookkeepers, owners of small-to-medium enterprises — were making large, irreversible financial decisions on an interface that overwhelmed them with choices, buried critical actions, and used patterns that contradicted themselves from one screen to the next.</p>
+          <p>I worked as part of a three-designer team on the portal's rebrand and rebuild, with a focus on two of its highest-stakes flows: <strong>beneficiary group creation</strong> and <strong>multi-payments</strong>. The goal wasn't to ship something prettier. It was to build trust at the exact moments users were most likely to make a costly mistake.</p>
 
           <div class="pull">
             <p>"Users were paying beneficiaries one by one because they didn't trust the bulk-payment feature enough to use it. Fear was eating the feature's entire value."</p>
           </div>
-
-          <h3 style="margin-top: var(--sp-4);">My role</h3>
-          <p>
-            UX and UI design, prototyping, user-testing coordination (with Ipsos), stakeholder communication, and taking ownership of dependencies beyond the immediate design problem &mdash; which, on a team this size and a project this cross-functional, was often where the real work happened.
-          </p>
         </section>
 
-        <!-- PROBLEM -->
+        <!-- Problem -->
         <section id="problem" class="cs-section">
           <span class="eyebrow">02 — Problem</span>
-          <h2>The old portal was <em>overloading</em> users at the worst moments.</h2>
-
-          <p>
-            User research with Ipsos surfaced a consistent pattern: users found the portal's navigation confusing, its iconography unclear, and its terminology inconsistent with how they thought about their own work. But the most damaging finding was specific to the flows I'd end up owning.
-          </p>
+          <h2>The portal was overloading users at the <em>worst</em> moments.</h2>
+          <p>User research with Ipsos surfaced a consistent pattern: users found the portal's navigation confusing, its iconography unclear, and its terminology inconsistent with how they thought about their own work. But the most damaging finding was specific to the flows I'd end up owning.</p>
 
           <p>Users were <em>choosing the slower path on purpose</em>:</p>
-
           <ul>
             <li>Paying beneficiaries <strong>one at a time</strong> instead of using the bulk feature, because the bulk feature scared them</li>
             <li>Avoiding group payments entirely because the UI "didn't feel safe"</li>
             <li>Relying on branch staff for tasks the portal was explicitly designed to let them self-serve</li>
           </ul>
 
-          <p>
-            In regulated fintech, that's not a usability problem. It's a business one. A feature nobody uses is a feature that costs money to maintain and earns nothing back.
-          </p>
+          <p>In regulated fintech, that's not a usability problem. It's a business one. A feature nobody uses is a feature that costs money to maintain and earns nothing back.</p>
 
-          <figure>
-            <div class="cs-figure">Figure — Annotated pain points from Ipsos user testing</div>
-            <figcaption>Figure 01 — Ipsos user testing surfaced three recurring issues: cluttered layouts, overlapping actions, and inconsistent component behaviour.</figcaption>
-          </figure>
+          <div class="figure"><span class="ph">Annotated pain points from Ipsos user testing</span></div>
         </section>
 
-        <!-- CHANGE 1: Beneficiary Groups -->
-        <section id="change-groups" class="cs-section">
-          <span class="eyebrow">03 — The redesign, pt. 1</span>
-          <h2>Beneficiary groups &mdash; <em>fewer</em> decisions, presented in order.</h2>
+        <!-- Challenges -->
+        <section id="challenges" class="cs-section">
+          <span class="eyebrow">03 — Challenges</span>
+          <h2>Two challenges shaped the redesign.</h2>
 
-          <p>
-            The original beneficiary group screen asked users to do everything at once: name the group, see current members, see all available beneficiaries, add members, remove members, save &mdash; on a single page where the same checkbox pattern meant different things depending on which section you were in.
-          </p>
-
-          <p>We brainstormed alternatives in InVision Freehand with the other designers and settled on three specific changes:</p>
-
-          <h3>Limit simultaneous actions</h3>
-          <p>Only the actions relevant to the current task are visible at any moment. Adding beneficiaries and removing them became separate, clearly-labelled flows instead of two identical-looking checkboxes that did opposite things.</p>
-
-          <h3>Introduce modal flows for the two core actions</h3>
-          <p>"Add beneficiaries" and "Remove beneficiaries" each became their own focused modal with its own step sequence. Users could no longer accidentally be doing the wrong thing.</p>
-
-          <h3>Standardise component behaviour</h3>
-          <p>One checkbox pattern, one meaning. One add button, one flow. One remove affordance, one flow. The payoff here is less visible than a redesigned layout, but it's where trust actually lives: when components behave predictably, users stop second-guessing themselves.</p>
-
-          <div class="before-after">
-            <div class="ba-card">
-              <div class="ba-label">Before</div>
-              <div class="ba-body">All actions present simultaneously. Two checkbox groups with opposite meanings. High cognitive load, low confidence.</div>
-            </div>
-            <div class="ba-card is-after">
-              <div class="ba-label">After</div>
-              <div class="ba-body">Focused modals for add/remove. Single meaning per component. Sequential, confident flow.</div>
-            </div>
+          <div class="challenge">
+            <span class="num">Challenge 01</span>
+            <h4>Reducing simultaneous decisions</h4>
+            <p>How might we strip the beneficiary group screen down so users could focus on one task at a time, rather than facing every possible action at once?</p>
           </div>
 
-          <div class="cs-figure is-wide">Figure — Before / after of the beneficiary group flow</div>
-        </section>
-
-        <!-- CHANGE 2: Multi-payments -->
-        <section id="change-payments" class="cs-section">
-          <span class="eyebrow">04 — The redesign, pt. 2</span>
-          <h2>Multi-payments &mdash; building trust through <em>structure</em>.</h2>
-
-          <p>
-            The multi-payment flow was the highest-stakes screen in the portal: mistakes here meant real money moving to the wrong account. And it was the flow users were most actively avoiding.
-          </p>
-
-          <p>Two structural changes did most of the heavy lifting:</p>
-
-          <h3>Steppers to break the task into phases</h3>
-          <p>A three-step progression &mdash; <em>Payment Options</em> → <em>Beneficiaries</em> → <em>Confirm</em> &mdash; let users focus on one decision at a time. Error-checking also became easier: if something looked wrong at the confirm step, users could step back without losing context.</p>
-
-          <h3>Table-format data with explicit, labelled actions</h3>
-          <p>Every beneficiary row shows exactly what's being sent, from which account, with which reference &mdash; and the actions available are explicitly named ("Remove", "Edit") rather than hidden behind misleading icons. Nothing here is invisible or implicit.</p>
-
-          <figure>
-            <div class="cs-figure is-wide">Figure — Final multi-payment flow with steppers and explicit actions</div>
-            <figcaption>Figure 02 — The redesigned multi-payment screen. Clear steps, explicit labels, and a visible running total build confidence at the exact moment users need it most.</figcaption>
-          </figure>
-
-          <div class="pull">
-            <p>"The redesign wasn't about making it prettier. It was about letting users do the right thing without a knot in their stomach."</p>
+          <div class="challenge">
+            <span class="num">Challenge 02</span>
+            <h4>Building trust into a high-stakes flow</h4>
+            <p>How might we redesign the multi-payment journey so users felt confident moving large sums, rather than reverting to slower, manual one-by-one workflows?</p>
           </div>
         </section>
 
-        <!-- REFLECTION -->
-        <section id="reflection" class="cs-section">
-          <span class="eyebrow">05 — Reflection</span>
+        <!-- Solutions -->
+        <section id="solutions">
+
+          <div class="cs-section solution">
+            <span class="label">Solution 01</span>
+            <h3>Beneficiary groups — <em>fewer</em> decisions, presented in order.</h3>
+            <p class="lead">The original screen asked users to do everything at once: name the group, see current members, see all available beneficiaries, add, remove, save — on a single page where the same checkbox pattern meant different things depending on which section you were in.</p>
+
+            <p>We brainstormed alternatives in InVision Freehand with the other designers and settled on three specific changes:</p>
+
+            <h4>Limit simultaneous actions</h4>
+            <p>Only the actions relevant to the current task are visible at any moment. Adding beneficiaries and removing them became separate, clearly-labelled flows instead of two identical-looking checkboxes that did opposite things.</p>
+
+            <h4>Introduce modal flows for the two core actions</h4>
+            <p>"Add beneficiaries" and "Remove beneficiaries" each became their own focused modal with its own step sequence. Users could no longer accidentally be doing the wrong thing.</p>
+
+            <h4>Standardise component behaviour</h4>
+            <p>One checkbox pattern, one meaning. One add button, one flow. One remove affordance, one flow. The payoff is less visible than a redesigned layout, but it's where trust actually lives: when components behave predictably, users stop second-guessing themselves.</p>
+
+            <div class="figure is-wide"><span class="ph">Before / after of the beneficiary group flow</span></div>
+          </div>
+
+          <div class="cs-section solution">
+            <span class="label">Solution 02</span>
+            <h3>Multi-payments — building trust through <em>structure.</em></h3>
+            <p class="lead">The multi-payment flow was the highest-stakes screen in the portal: mistakes here meant real money moving to the wrong account. And it was the flow users were most actively avoiding.</p>
+
+            <p>Two structural changes did most of the heavy lifting:</p>
+
+            <h4>Steppers to break the task into phases</h4>
+            <p>A three-step progression — <em>Payment Options</em> → <em>Beneficiaries</em> → <em>Confirm</em> — let users focus on one decision at a time. Error-checking also became easier: if something looked wrong at the confirm step, users could step back without losing context.</p>
+
+            <h4>Table-format data with explicit, labelled actions</h4>
+            <p>Every beneficiary row shows exactly what's being sent, from which account, with which reference — and the actions available are explicitly named ("Remove", "Edit") rather than hidden behind misleading icons. Nothing here is invisible or implicit.</p>
+
+            <div class="figure is-wide"><span class="ph">Final multi-payment flow with steppers and explicit actions</span></div>
+
+            <div class="pull">
+              <p>"The redesign wasn't about making it prettier. It was about letting users do the right thing without a knot in their stomach."</p>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- Lessons -->
+        <section id="lessons" class="cs-section">
+          <span class="eyebrow">04 — Lessons learned</span>
           <h2>What this project <em>taught</em> me.</h2>
 
-          <h3>Consistency is an invisible UX feature &mdash; until it isn't</h3>
-          <p>
-            The biggest wins on this project weren't new patterns. They were the same pattern applied everywhere. When every checkbox means the same thing, users stop spending cognitive energy on the interface and start spending it on their actual task. In regulated domains especially, that trade is everything.
-          </p>
-
-          <h3>Enterprise UX is mostly about owning the invisible work</h3>
-          <p>
-            Rebuilding a banking portal meant working with business analysts, system analysts, account managers, developers, and a rotating cast of stakeholders &mdash; sometimes without a product owner present. The design was only as good as the documentation, the handoffs, and the patience to re-ground the team around users every time priorities drifted.
-          </p>
-
-          <h3>User testing is the cheapest honesty a team can buy</h3>
-          <p>
-            Working with Ipsos meant I couldn't argue my way past a pattern users couldn't parse. It grounded conversations with stakeholders who wanted to move faster than the evidence warranted &mdash; and it earned trust, over time, for the design decisions that followed.
-          </p>
+          <div class="lessons">
+            <div class="lesson">
+              <h4><span class="num">01</span>Consistency is invisible — until it isn't</h4>
+              <p>The biggest wins on this project weren't new patterns. They were the same pattern applied everywhere. When every checkbox means the same thing, users stop spending cognitive energy on the interface and start spending it on their actual task. In regulated domains especially, that trade is everything.</p>
+            </div>
+            <div class="lesson">
+              <h4><span class="num">02</span>Enterprise UX is invisible work</h4>
+              <p>Rebuilding a banking portal meant working with business analysts, system analysts, account managers, developers, and a rotating cast of stakeholders — sometimes without a product owner present. The design was only as good as the documentation, the handoffs, and the patience to re-ground the team around users every time priorities drifted.</p>
+            </div>
+            <div class="lesson">
+              <h4><span class="num">03</span>Testing is the cheapest honesty</h4>
+              <p>Working with Ipsos meant I couldn't argue my way past a pattern users couldn't parse. It grounded conversations with stakeholders who wanted to move faster than the evidence warranted — and it earned trust, over time, for the design decisions that followed.</p>
+            </div>
+            <div class="lesson">
+              <h4><span class="num">04</span>Trust is built one component at a time</h4>
+              <p>You don't restore confidence in a financial product with one redesigned hero screen. You restore it through a hundred tiny, unsexy decisions about labels, icons, action placement, and predictable behaviour — and the cumulative effect is that users stop avoiding the feature.</p>
+            </div>
+          </div>
         </section>
 
         <!-- Next -->
         <a href="voyc.html" class="cs-next">
-          <span class="eyebrow">Previous Case Study</span>
+          <span class="label">Previous project</span>
           <h3>← Reducing churn by <em>50%</em> by redesigning an AI platform's onboarding flow</h3>
         </a>
 
@@ -203,21 +227,19 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-grid">
+      <div class="footer-cta">
         <div>
-          <span style="font-family: var(--font-mono); font-size: var(--size-xs); letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted);">Get in touch</span>
+          <span style="font-size: var(--fs-sm); font-weight: 500; color: var(--muted);">Get in touch</span>
           <h2 style="margin-top: var(--sp-2);">Have a <em>complex</em> problem worth solving?</h2>
         </div>
         <div>
-          <a href="mailto:joane.burger@gmail.com" class="contact-link">joane.burger@gmail.com</a>
-          <p style="margin-top: var(--sp-3); color: var(--muted); font-size: var(--size-sm);">
-            Available for senior product design roles, EU-remote. Usually reply within a day.
-          </p>
+          <a href="mailto:joane.burger@gmail.com" class="email">joane.burger@gmail.com</a>
+          <p class="reply">Available for senior product design roles, EU-remote. Usually reply within a day.</p>
         </div>
       </div>
       <div class="footer-meta">
-        <span>© 2026 — Designed &amp; built by Joané <span class="signature">Burger</span></span>
-        <div class="socials">
+        <span>© 2026 Joané Burger</span>
+        <div class="links">
           <a href="https://www.linkedin.com/in/joane-burger-a52912117" target="_blank" rel="noopener">LinkedIn</a>
           <a href="mailto:joane.burger@gmail.com">Email</a>
         </div>
