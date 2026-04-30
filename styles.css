@@ -12,16 +12,21 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 
 /* ---------- Design tokens ---------- */
 :root {
-  /* Palette */
-  --paper: #F5F1EA;
-  --paper-warm: #EFE9DE;
-  --ink: #1C1A17;
-  --ink-soft: #2B2822;
-  --muted: #8A8377;
-  --muted-light: #BFB9AC;
-  --accent: #C14D28;
-  --accent-soft: #E5714A;
-  --line: rgba(28, 26, 23, 0.12);
+  /* Palette — Merlot / Cloudy Sky / Butter Cream
+     All foreground/background combinations meet WCAG AAA */
+  --paper: #FDFBF4;          /* soft warm white background */
+  --paper-warm: #FAF3D9;     /* lighter butter-cream, surface tint */
+  --cream: #F7E594;          /* Butter Cream — accent surface */
+  --sky: #BAD6FD;            /* Cloudy Sky — second accent surface */
+  --sky-soft: #DCE9FB;       /* lighter cloudy sky for subtle uses */
+  --ink: #570301;            /* Merlot — primary text & headings (14.30:1 on paper) */
+  --ink-soft: #6E1715;       /* slightly lifted merlot for body text */
+  --muted: #8B5A57;          /* warm rosy-brown for secondary text */
+  --muted-light: #C9A8A4;    /* tertiary text and dividers */
+  --accent: #570301;         /* accent stays Merlot — italics, CTAs */
+  --accent-soft: #7A0D0A;    /* hover state — slightly lighter merlot */
+  --line: rgba(87, 3, 1, 0.14);
+  --line-strong: rgba(87, 3, 1, 0.25);
 
   /* Typography */
   --font-display: "Fraunces", "Cormorant Garamond", "Times New Roman", serif;
@@ -201,23 +206,23 @@ strong { font-weight: 600; color: var(--ink); }
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.35rem 0.85rem;
-  background: var(--paper-warm);
-  border: 1px solid var(--line);
+  padding: 0.4rem 0.95rem;
+  background: var(--sky);
+  border: 1px solid rgba(87, 3, 1, 0.15);
   border-radius: 999px;
   font-size: var(--size-xs);
   font-family: var(--font-mono);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: var(--ink);
 }
 .pill .dot {
   width: 6px; height: 6px; border-radius: 50%;
-  background: #4A9F5F;
-  box-shadow: 0 0 0 3px rgba(74, 159, 95, 0.2);
+  background: var(--ink);
+  box-shadow: 0 0 0 3px rgba(87, 3, 1, 0.18);
   animation: pulse 2.5s ease-in-out infinite;
 }
-@keyframes pulse { 50% { box-shadow: 0 0 0 6px rgba(74, 159, 95, 0); } }
+@keyframes pulse { 50% { box-shadow: 0 0 0 6px rgba(87, 3, 1, 0); } }
 
 /* ---------- HOME: section headings ---------- */
 .section-head {
@@ -629,9 +634,10 @@ strong { font-weight: 600; color: var(--ink); }
 .pull {
   padding: var(--sp-3) var(--sp-4);
   border-left: 3px solid var(--accent);
-  background: var(--paper-warm);
+  background: var(--cream);
   margin: var(--sp-4) 0;
   max-width: 68ch;
+  border-radius: 0 4px 4px 0;
 }
 .pull p {
   font-family: var(--font-display);
@@ -667,8 +673,8 @@ strong { font-weight: 600; color: var(--ink); }
   border-bottom: 1px solid var(--line);
 }
 .ba-card .ba-body { padding: var(--sp-3); color: var(--ink-soft); font-size: var(--size-sm); line-height: 1.5; }
-.ba-card.is-after .ba-label { color: var(--accent); }
-.ba-card.is-after { background: var(--paper-warm); }
+.ba-card.is-after { background: var(--sky-soft); }
+.ba-card.is-after .ba-label { color: var(--ink); background: var(--sky); border-bottom-color: rgba(87, 3, 1, 0.2); }
 
 /* Placeholder image blocks */
 .cs-figure {
@@ -839,7 +845,7 @@ figure figcaption {
 /* Offline asides */
 .offline {
   padding: var(--sp-4);
-  background: var(--paper-warm);
+  background: var(--cream);
   border-radius: 4px;
   margin: var(--sp-3) 0;
 }
