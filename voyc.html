@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voyc · Self-service onboarding — Joané Burger</title>
-  <meta name="description" content="Case study: redesigning the onboarding flow for an AI compliance monitoring platform. 70% reduction in setup time, 40% reduction in onboarding calls.">
+  <title>Voyc · Self-service onboarding, Joané Burger</title>
+  <meta name="description" content="Case study: redesigning the onboarding flow for an AI compliance monitoring platform. 70% reduction in setup time, 40% reduction in onboarding calls, time-to-value down to 64 days.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -36,8 +36,9 @@
           <li><a href="#overview">Overview</a></li>
           <li><a href="#problem">The problem</a></li>
           <li><a href="#discovery">Discovery</a></li>
-          <li><a href="#challenges">Challenges</a></li>
-          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#decision-1">Manual bottlenecks</a></li>
+          <li><a href="#decision-2">In-app guidance</a></li>
+          <li><a href="#decision-3">Progress visibility</a></li>
           <li><a href="#impact">Impact</a></li>
           <li><a href="#lessons">Lessons</a></li>
         </ol>
@@ -50,30 +51,34 @@
           <div class="meta">
             <span>Case Study 01</span>
             <span>Voyc · AI Compliance Monitoring</span>
-            <span>Oct 2022 — Oct 2024</span>
+            <span>Oct 2022 - Oct 2024</span>
             <span>Senior Product Designer</span>
           </div>
+          <div class="opener-quote">
+            <p>"We had customers on the verge of cancellation because they hadn't seen value yet. Every new client was burning Customer Success hours we didn't have."</p>
+            <span class="attribution">,  Internal, Voyc Customer Success</span>
+          </div>
           <h1>Reducing churn by <em>50%</em> by redesigning an AI platform's onboarding flow.</h1>
-          <p class="tagline">I replaced a five-call, five-hour manual setup process with a guided in-app experience — cutting setup time from 5 hours to 1.5, and time-to-value from 6 months to 64 days.</p>
+          <p class="tagline">When mounting client complaints and a heavy manual setup process threatened revenue, I led a rapid redesign of Voyc's multi-feature onboarding. The work combined in-depth research, cross-department workshops, and fast prototyping. The result: setup time down 70%, onboarding calls down 40%, time-to-value down to 64 days.</p>
         </section>
 
-        <!-- Impact stats — Sierra style -->
+        <!-- Impact stats -->
         <div class="stats">
           <div class="stat">
             <span class="num">↓<em>70</em>%</span>
-            <span class="label">Setup time — from 5 hours to 1.5 hours per customer</span>
+            <span class="label">Setup time: from 5 hours to 1.5 hours per customer</span>
           </div>
           <div class="stat">
             <span class="num">↓<em>40</em>%</span>
-            <span class="label">Onboarding calls — from 5 to 3 (45 min each)</span>
+            <span class="label">Onboarding calls: from 5 to 3 (45 min each)</span>
           </div>
           <div class="stat">
             <span class="num"><em>64</em><span style="font-size: 0.6em;"> days</span></span>
-            <span class="label">Time to value — down from 1.5–6 months</span>
+            <span class="label">Time to value, down from 1.5 to 6 months</span>
           </div>
         </div>
 
-        <!-- Project meta grid — Sierra style -->
+        <!-- Project meta grid -->
         <div class="proj-meta">
           <div>
             <h4>My role</h4>
@@ -105,64 +110,52 @@
           <div>
             <h4>Timeline</h4>
             <ul>
-              <li>Discovery — 4 weeks</li>
-              <li>Design &amp; iteration — 8 weeks</li>
-              <li>Build &amp; rollout — ongoing</li>
+              <li>Discovery: 4 weeks</li>
+              <li>Design &amp; iteration: 8 weeks</li>
+              <li>Build &amp; rollout: ongoing</li>
             </ul>
           </div>
         </div>
 
         <!-- Hero image -->
-        <div class="cs-hero-img bg-cream">
-          <span class="ph">Homepage dashboard — final design</span>
+        <div class="cs-hero-img">
+          <img src="images/voyc-hero-dashboard.png" alt="Voyc onboarding homepage with welcome banner, Help Center and Voyc Village cards, configuration completion score, and the first-step Start Here tooltip">
         </div>
 
         <!-- Overview -->
         <section id="overview" class="cs-section">
-          <span class="eyebrow">01 — Overview</span>
+          <span class="eyebrow">01 · Overview</span>
           <h2>Voyc's customers <em>weren't reaching value</em> fast enough.</h2>
-          <p class="lead">Voyc is a UK-based startup that uses AI to monitor 100% of call-center conversations for compliance breaches — a product that pays for itself the moment it catches a single mis-selling event. But customers weren't getting to that moment fast enough.</p>
+          <p class="lead">Voyc is a UK-based startup that uses AI to monitor 100% of call-center conversations for compliance breaches, a product that pays for itself the moment it catches a single mis-selling event. But customers weren't getting to that moment fast enough.</p>
           <p>New clients were stuck in onboarding for up to six months before they could run a single script check, and our Customer Success team was drowning in repetitive setup calls. As the first product designer at Voyc, I led the end-to-end redesign of onboarding: from user research and journey mapping through to a shipped in-app self-service flow.</p>
-
-          <div class="pull">
-            <p>"We had customers on the verge of cancellation because they hadn't seen value yet. Every new client was burning Customer Success hours we didn't have."</p>
-          </div>
         </section>
 
         <!-- Problem -->
         <section id="problem" class="cs-section">
-          <span class="eyebrow">02 — Problem</span>
-          <h2>Onboarding was taking <em>months</em>, not minutes.</h2>
-          <p>Every new Voyc customer had to go through up to five 45-minute onboarding calls, plus roughly five hours of manual setup support. For a product that sells itself on speed of insight, this was the wrong first impression — and it was putting real revenue at risk. Three things, specifically, were going wrong:</p>
+          <span class="eyebrow">02 · The problem</span>
+          <h2>From hours to minutes: transforming onboarding for <em>rapid value</em>.</h2>
+          <p class="lead">Voyc's users faced a cumbersome onboarding process that required up to five 45-minute calls and an additional five hours of manual support, delaying their ability to see the product's value for six months.</p>
+          <p>This inefficient process led to user frustration, increased churn, and overwhelmed our customer success team. We had key clients on the brink of cancellation. The risk was real and immediate.</p>
+          <p>The project aimed to make onboarding faster and lighter by introducing a self-service flow that would reduce support interactions by at least 50%, shorten time-to-value, and boost user retention. Three specific problems were holding things up:</p>
 
-          <h3>Manual onboarding bottlenecks</h3>
-          <p>The setup process depended on call after call with our Customer Success team. Customers couldn't move forward without us, and we couldn't scale without fixing that dependency.</p>
+          <h3>1. Manual onboarding bottlenecks</h3>
+          <p>The setup process was call-dependent and slow. It delayed users from realising value and pointed clearly at the need for a self-service, in-app flow. Customers couldn't move forward without our Customer Success team, and we couldn't scale without fixing that dependency.</p>
 
-          <h3>No in-app guidance</h3>
-          <p>Help content lived in a hidden side-nav and had to be hunted for. When a user hit confusion — which happened often, given the complexity of compliance scripting — their only option was to open a support ticket.</p>
+          <h3>2. Insufficient in-app guidance</h3>
+          <p>Without integrated help content, users had to rely on customer support, which increased queries and frustration. When a user hit confusion (and given the complexity of compliance scripting, this happened often), their only option was to open a support ticket.</p>
 
-          <h3>No visibility of progress</h3>
-          <p>Users had no idea how far into setup they were, what came next, or whether they were nearly done. The uncertainty bred support queries of its own: "Am I doing this right?"</p>
-
-          <div class="figure"><span class="ph">Journey map of the original five-call onboarding flow</span></div>
+          <h3>3. Limited onboarding visibility</h3>
+          <p>Users struggled to track their progress without a clear overview of pending tasks. The uncertainty bred support queries of its own: "Am I doing this right? Am I nearly done?"</p>
         </section>
 
         <!-- Discovery -->
         <section id="discovery" class="cs-section">
-          <span class="eyebrow">03 — Discovery</span>
+          <span class="eyebrow">03 · Discovery</span>
           <h2>Six research moves to <em>pinpoint</em> the friction.</h2>
-          <p class="lead">Before designing anything, I needed to know exactly where the journey was breaking down — not from assumption, but from evidence.</p>
+          <p class="lead">To pinpoint where users struggled, I conducted six targeted research activities: attending onboarding sessions, conducting user interviews, analysing support tickets, attending stakeholder workshops, affinity mapping, and running a prioritisation session.</p>
+          <p>What this surfaced was a fragmented manual process delaying time-to-value and burning out the support team. The insights confirmed that a self-service guided flow would better fit users' mental models and meet a real business need.</p>
 
-          <ul>
-            <li>Sat in on live onboarding sessions to watch customers struggle in real time</li>
-            <li>Conducted user interviews with customers at different points in the setup journey</li>
-            <li>Analysed support tickets to find the repeat offenders</li>
-            <li>Ran stakeholder workshops with Customer Success, Sales, and Engineering</li>
-            <li>Affinity-mapped everything in FigJam to cluster the pain points</li>
-            <li>Facilitated a prioritisation session to agree what we'd tackle first</li>
-          </ul>
-
-          <p>What emerged was that the pain wasn't one big problem — it was a fragmented chain of small frictions, each easy to fix alone but compounding into a six-month slog. The answer wasn't a better manual process. It was a self-service, in-app flow that aligned with how customers actually thought about getting started.</p>
+          <h3>What I learned, from whom</h3>
 
           <!-- User-quote cards -->
           <div class="quote-grid">
@@ -208,58 +201,97 @@
             </div>
           </div>
 
-          <div class="figure"><span class="ph">FigJam board — clustered pain points from discovery synthesis</span></div>
+          <h3>Visual mapping of user pain points</h3>
+          <p>I clustered everything we learned into five themes: Missing or Unclear Guidance, Support Queries &amp; Bottlenecks, Usability Issues &amp; Confusion, Time-to-Value Delays, and Opportunities &amp; User Suggestions. Surfacing the patterns this way made them visible to the rest of the team.</p>
+
+          <div class="figure">
+            <img src="images/voyc-figjam-pain-points.png" alt="FigJam affinity map clustering user feedback into five themed groups: Missing or Unclear Guidance, Support Queries and Bottlenecks, Usability Issues and Confusion, Time-to-Value Delays, and Opportunities and User Suggestions">
+          </div>
+          <p class="figure-caption">A snapshot from our FigJam workshop. Sticky notes clustered user feedback to pinpoint the key friction points in onboarding.</p>
         </section>
 
-        <!-- Challenges -->
-        <section id="challenges" class="cs-section">
-          <span class="eyebrow">04 — Challenges</span>
-          <h2>Two challenges shaped the redesign.</h2>
+        <!-- DESIGN DECISION 1 -->
+        <section id="decision-1" class="cs-section solution">
+          <span class="label">Design Decision 01 · Manual onboarding bottlenecks</span>
+          <h3>Validating the new flow with <em>iterative</em> service-level testing.</h3>
+          <p class="lead">Once the discovery synthesis showed us where things were breaking down, the next move was to design a self-service flow that fit how customers actually thought about getting started. And then validate it, before committing to a build.</p>
 
-          <div class="challenge">
-            <span class="num">Challenge 01</span>
-            <h4>Turning a service problem into a product</h4>
-            <p>How might we move the work of onboarding from human-led calls into the product itself, without losing the trust and reassurance those calls provided?</p>
+          <h4>Iterative testing: validating the new flow</h4>
+          <p>I drafted an initial onboarding flow and we tested it during manual onboarding sessions led by the Learning Experience team. The hands-on format let us adjust the process in real time. It confirmed what worked and what didn't, and saved engineering effort by catching gaps in the service before they were ever built.</p>
+
+          <p>The flowchart went through three iterations during these sessions, each one shaped by real customer feedback:</p>
+
+          <div class="figure is-portrait contain">
+            <img src="images/voyc-service-flowchart.png" alt="Three iterations of the onboarding service flowchart, from a complex purple decision tree, through a four-step Miro plan with score milestones, into a final structured flow with Step 1 Preparing Organisation, Step 2 Channel Set Up, Step 3 Initial Configuration, and Step 4 Refine and Calibrate">
           </div>
+          <p class="figure-caption">Flow chart validation: three iterations of the onboarding flow, refined live during sessions with the Learning Experience team.</p>
+        </section>
 
-          <div class="challenge">
-            <span class="num">Challenge 02</span>
-            <h4>Making progress visible at every step</h4>
-            <p>How might we give compliance teams a clear sense of "where am I, what's next, and how close am I to done?" — across a setup journey with dozens of small tasks?</p>
+        <!-- DESIGN DECISION 2 -->
+        <section id="decision-2" class="cs-section solution">
+          <span class="label">Design Decision 02 · Insufficient in-app guidance</span>
+          <h3>How might we <em>embed</em> help content where users actually need it?</h3>
+          <p class="lead">Users got stuck during onboarding because the guidance wasn't where they needed it. Without contextual help inside the product, they had to fall back on customer support, which slowed them down and frustrated them.</p>
+          <p>I wanted to give users the tools to troubleshoot on their own. We embedded contextual tips and clear setup instructions directly inside the relevant screens, so the help came to the user instead of the other way around. The change took load off support, sped up time-to-value, and made the experience feel less like a maze.</p>
+
+          <!-- Before/After grid -->
+          <div class="figure-grid">
+            <div class="ba-card">
+              <div class="ba-label">Before: hidden &amp; disconnected</div>
+              <div class="ba-image contain">
+                <img src="images/voyc-help-before.png" alt="Original side navigation with Help and Info Hub buried in the menu, requiring users to leave their workflow to find help">
+              </div>
+              <div class="ba-caption">Help resources sat in the side navigation. Users had to leave their workflow to find them, which broke focus and pushed people back toward support tickets.</div>
+            </div>
+            <div class="ba-card is-after">
+              <div class="ba-label">After: embedded &amp; instant</div>
+              <div class="ba-image contain">
+                <img src="images/voyc-help-after.png" alt="Redesigned interface with contextual help integrated directly into the homepage, showing Go to Help Center buttons within feature cards, an Understand your Score affordance, and an inline View Setup Guide link">
+              </div>
+              <div class="ba-caption">Help content now sits where users actually look for it. Tooltips and inline buttons guide them to the right resource at the right moment, reducing friction and lowering the volume of support queries.</div>
+            </div>
           </div>
         </section>
 
-        <!-- Solutions -->
-        <section id="solutions">
+        <!-- DESIGN DECISION 3 -->
+        <section id="decision-3" class="cs-section solution">
+          <span class="label">Design Decision 03 · Limited onboarding visibility</span>
+          <h3>Final implementation: an <em>in-app onboarding checklist</em>.</h3>
+          <p class="lead">Users had no view into their onboarding progress, which left them feeling lost and reaching for support. They couldn't see what was done, what was next, or how close they were to the finish line.</p>
+          <p>I designed a transparent dashboard with real-time progress tracking and clear next steps. Through research and iterative testing with the Learning Experience team, this turned into an in-app checklist that put users back in control of their own setup.</p>
 
-          <div class="cs-section solution">
-            <span class="label">Solution 01</span>
-            <h3>An in-app onboarding checklist, <em>visible from day one.</em></h3>
-            <p class="lead">I placed a live progress dashboard on the homepage: a completion score, an ordered list of setup tasks with effort indicators, and a floating checklist that persisted across screens. Users now knew exactly what to do next, how much was left, and how much effort each step would take.</p>
-            <div class="figure"><span class="ph">Onboarding checklist on the homepage — final implementation</span></div>
+          <div class="figure is-wide">
+            <img src="images/voyc-checklist-implementation.png" alt="Side-by-side comparison of the onboarding checklist at 0 percent and 30 percent completion, with annotations marking the four key components: 1 Onboarding Checklist, 2 Completion Score, 3 Effort Indicators, 4 Floating Checklist">
           </div>
+          <p class="figure-caption">Onboarding checklist implementation, shown at 0% and 30% completion. Four design moves work together: (1) the checklist itself, (2) a completion score, (3) effort indicators per task, and (4) a floating mini-checklist that persists across screens.</p>
 
-          <div class="cs-section solution">
-            <span class="label">Solution 02</span>
-            <h3>Help content, <em>embedded</em> where users need it.</h3>
-            <p class="lead">Contextual tooltips, inline setup guides, and a redesigned Help &amp; Info Hub surfaced the right resources at the right moment. Help stopped being a destination and became a behaviour of the interface itself.</p>
-            <div class="figure"><span class="ph">Embedded contextual help patterns</span></div>
+          <h4>Four design moves, working together</h4>
+
+          <div class="lessons">
+            <div class="lesson">
+              <h4><span class="num">01</span>Onboarding checklist for easy access</h4>
+              <p>Putting the checklist on the homepage made key tasks visible from the moment a user logged in. It cut confusion and reduced the reliance on support that was slowing things down.</p>
+            </div>
+            <div class="lesson">
+              <h4><span class="num">02</span>Completion score for progress tracking</h4>
+              <p>The progress indicator gave users a sense of momentum. People are more likely to finish a setup when they can see how close they are.</p>
+            </div>
+            <div class="lesson">
+              <h4><span class="num">03</span>Task &amp; effort indicators for clarity</h4>
+              <p>Each task showed its expected effort upfront. Users could plan their day instead of guessing how long things would take, which cut a whole category of "is this taking too long?" support tickets.</p>
+            </div>
+            <div class="lesson">
+              <h4><span class="num">04</span>Floating checklist, always in reach</h4>
+              <p>The checklist stayed visible as users moved between screens, so they never had to navigate back to remember where they were. Lower cognitive load, fewer dropped sessions.</p>
+            </div>
           </div>
-
-          <div class="cs-section solution">
-            <span class="label">Solution 03</span>
-            <h3>A <em>validated</em> service flow before any code shipped.</h3>
-            <p class="lead">I built the new flow as a service-level journey first, then tested it live during manual onboarding sessions with the Learning Experience team. That let us refine the logic with real customers before a single engineer touched it — saving build cost and catching problems our in-app prototypes would have missed.</p>
-            <div class="figure is-wide"><span class="ph">Final onboarding flow diagram after three iterations</span></div>
-          </div>
-
         </section>
 
-        <!-- Impact -->
+        <!-- IMPACT -->
         <section id="impact" class="cs-section">
-          <span class="eyebrow">05 — Impact</span>
+          <span class="eyebrow">04 · Impact</span>
           <h2>From six months to <em>64 days.</em></h2>
-          <p class="lead">The numbers matter because they represent real customers reaching real value faster — and a Customer Success team that finally had time for strategic work instead of setup calls.</p>
+          <p class="lead">We cut setup time by 70%, onboarding calls by 40%, and brought time-to-value down to 64 days.</p>
 
           <div class="stats" style="border-bottom: none; padding-bottom: 0;">
             <div class="stat">
@@ -272,34 +304,35 @@
             </div>
             <div class="stat">
               <span class="num"><em>64</em><span style="font-size: 0.6em;"> days</span></span>
-              <span class="label">Time-to-value down from 1.5–6 months</span>
+              <span class="label">Time-to-value down from 1.5 to 6 months</span>
             </div>
           </div>
 
-          <p>Critically, the change stuck. The self-service flow scaled cleanly with new customer growth, and Customer Success was finally freed up to do the strategic work the product's growth needed.</p>
+          <p>The numbers matter because they represent real customers reaching real value faster, and a Customer Success team that finally had time for strategic work instead of setup calls. Critically, the change stuck. The self-service flow scaled cleanly with new customer growth, and Customer Success was freed up to do the strategic work the product's growth needed.</p>
         </section>
 
-        <!-- Lessons -->
+        <!-- LESSONS -->
         <section id="lessons" class="cs-section">
-          <span class="eyebrow">06 — Lessons learned</span>
+          <span class="eyebrow">05 · Reflection</span>
           <h2>What this project <em>taught</em> me.</h2>
+          <p class="lead">Looking back, the lesson I take from this is simple: deep research plus iterative design beats clever guessing every time. Along the way I sharpened my prototyping speed, my cross-functional facilitation, and my willingness to validate before building.</p>
 
           <div class="lessons">
             <div class="lesson">
-              <h4><span class="num">01</span>Onboarding is a service problem</h4>
-              <p>If I'd approached this as "make the in-app flow better," we'd have shipped prettier screens and saved maybe a call or two. The 70% win came from treating onboarding as a cross-functional service — Customer Success, Learning Experience, Product, Engineering — with the UI as one layer of a bigger system.</p>
+              <h4><span class="num">01</span>Process impact</h4>
+              <p>Out of this project I built a reusable <strong>stakeholder workshop template</strong>: a facilitation structure for prioritisation sessions and cross-functional problem-framing, that the team adopted on subsequent initiatives. Naming the artefact mattered. A template turns a one-off facilitation move into a repeatable team practice.</p>
             </div>
             <div class="lesson">
-              <h4><span class="num">02</span>Discovery de-risks everything</h4>
-              <p>Six research activities felt excessive at the start. It was, in hindsight, exactly the right amount. Every design decision downstream was defensible because we could point to specific evidence behind it. Prioritisation became faster, not slower.</p>
+              <h4><span class="num">02</span>Collaboration impact</h4>
+              <p>I worked across Customer Success, Learning Experience, Engineering, and Product, and we ended up with shared templates and clearer communication channels that outlived the project itself. Better documentation. Faster decisions. Fewer cross-team misunderstandings.</p>
             </div>
             <div class="lesson">
-              <h4><span class="num">03</span>Validate before you ship</h4>
-              <p>The move I'm most proud of wasn't a screen — it was running the new flow as a live manual script with real customers before we built anything. That turned engineering from a guessing game into execution.</p>
+              <h4><span class="num">03</span>Personal growth</h4>
+              <p>Working close to real numbers (setup hours, support tickets, time-to-value) sharpened the way I weigh design trade-offs. I'm now quicker to ask "what's the data telling us?" instead of leaning only on instinct, and quicker to ship a small validated step over a polished but unproven leap.</p>
             </div>
             <div class="lesson">
-              <h4><span class="num">04</span>UX writing is product design</h4>
-              <p>Half the work of this project lived in tooltip copy, label clarity, and effort tags. Polishing the words inside components turned out to be one of the highest-leverage moves I made.</p>
+              <h4><span class="num">04</span>Onboarding is a service problem</h4>
+              <p>The 70% win came from treating onboarding as a cross-functional service (Customer Success, Learning Experience, Product, Engineering) with the UI as one layer of a bigger system. If I'd approached it as "make the in-app flow better," we'd have shipped prettier screens and saved maybe a call or two.</p>
             </div>
           </div>
         </section>
@@ -318,7 +351,7 @@
       <div class="footer-cta">
         <div>
           <span style="font-size: var(--fs-sm); font-weight: 500; color: var(--muted);">Get in touch</span>
-          <h2 style="margin-top: var(--sp-2);">Have a <em>complex</em> problem worth solving?</h2>
+          <h2 style="margin-top: var(--sp-2);">Got a hard problem and a <em>real</em> deadline?</h2>
         </div>
         <div>
           <a href="mailto:joane.burger@gmail.com" class="email">joane.burger@gmail.com</a>

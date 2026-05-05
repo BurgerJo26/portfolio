@@ -806,6 +806,35 @@ em { font-style: italic; }
   max-width: none;
 }
 
+/* Opener quote — used as a hook above the case-study title.
+   Quieter than .pull so the H1 still leads the page visually. */
+.opener-quote {
+  display: block;
+  margin-bottom: var(--sp-3);
+  padding-left: var(--sp-3);
+  border-left: 3px solid var(--ink);
+  max-width: 60ch;
+}
+.opener-quote p {
+  font-size: var(--fs-lg);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  margin: 0;
+  max-width: none;
+}
+.opener-quote .attribution {
+  display: block;
+  margin-top: var(--sp-1);
+  font-size: var(--fs-sm);
+  font-style: normal;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
 /* User-quote cards (Sierra-style) */
 .quote-grid {
   display: grid;
@@ -922,6 +951,69 @@ em { font-style: italic; }
 .figure img { width: 100%; height: 100%; object-fit: cover; }
 .figure.is-tall { aspect-ratio: 4 / 5; }
 .figure.is-wide { aspect-ratio: 21 / 9; }
+.figure.is-portrait { aspect-ratio: 3 / 4; max-width: 720px; margin-left: auto; margin-right: auto; }
+.figure.is-square { aspect-ratio: 1 / 1; }
+.figure.contain img { object-fit: contain; padding: var(--sp-3); }
+
+/* Two-column figure grid (before/after side-by-side comparisons) */
+.figure-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-2);
+  margin: var(--sp-3) 0;
+}
+@media (min-width: 720px) {
+  .figure-grid { grid-template-columns: 1fr 1fr; gap: var(--sp-3); }
+  .figure-grid.is-three { grid-template-columns: 1fr 1fr 1fr; gap: var(--sp-2); }
+}
+.figure-grid .ba-card {
+  background: var(--paper-warm);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.figure-grid .ba-card .ba-label {
+  padding: var(--sp-2) var(--sp-3);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+.figure-grid .ba-card.is-after .ba-label { color: var(--ink); background: var(--sky-soft); }
+.figure-grid .ba-card .ba-image {
+  flex: 1;
+  aspect-ratio: 4 / 3;
+  background: var(--paper);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.figure-grid .ba-card .ba-image img {
+  width: 100%; height: 100%; object-fit: cover;
+}
+.figure-grid .ba-card .ba-image.contain img {
+  object-fit: contain;
+  padding: var(--sp-2);
+  background: var(--paper);
+}
+.figure-grid .ba-card .ba-caption {
+  padding: var(--sp-2) var(--sp-3) var(--sp-3);
+  font-size: var(--fs-sm);
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+/* Figure caption */
+.figure-caption {
+  margin-top: -0.5rem;
+  margin-bottom: var(--sp-3);
+  font-size: var(--fs-sm);
+  color: var(--muted);
+  font-style: italic;
+  max-width: 68ch;
+}
 
 /* Lessons / numbered insights */
 .lessons {
