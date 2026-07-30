@@ -256,12 +256,12 @@ a:focus-visible, button:focus-visible {
 /* ---------- Case study layout ---------- */
 .cs-layout {
   display: grid;
-  grid-template-columns: 200px minmax(0, 720px);
+  grid-template-columns: 180px minmax(0, 640px) 180px;
   justify-content: center;
-  gap: var(--sp-5);
+  gap: 0 var(--sp-4);
   padding: var(--sp-5) 0 var(--sp-4);
 }
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
   .cs-layout { grid-template-columns: minmax(0, 1fr); }
   .cs-nav { display: none; }
 }
