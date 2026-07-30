@@ -289,15 +289,11 @@ a:focus-visible, button:focus-visible {
 .cs-main { min-width: 0; }
 
 /* Case header */
-.cs-header .meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1rem;
-  font-size: var(--fs-sm);
-  color: var(--muted);
-  margin-bottom: var(--sp-2);
+.cs-header h1 {
+  font-size: var(--fs-xl);
+  margin: 0 0 var(--sp-3);
 }
-.cs-header h1 { font-size: var(--fs-xl); margin-bottom: var(--sp-3); }
+.cs-header .cs-hero-img { margin: 0 0 var(--sp-3); }
 .cs-header .tagline { color: var(--ink-soft); margin-bottom: var(--sp-3); }
 .opener-quote {
   background: var(--surface);
@@ -308,7 +304,7 @@ a:focus-visible, button:focus-visible {
   color: var(--ink-soft);
   margin-bottom: var(--sp-3);
 }
-.opener-quote .attribution { display: block; margin-top: 0.4rem; color: var(--muted); font-size: var(--fs-xs); }
+.opener-quote .attribution, .opener-quote .who { display: block; margin-top: 0.4rem; color: var(--muted); font-size: var(--fs-xs); }
 
 /* Impact stats */
 .stats {
