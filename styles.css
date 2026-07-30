@@ -290,7 +290,8 @@ a:focus-visible, button:focus-visible {
 
 /* Case header */
 .cs-header h1 {
-  font-size: var(--fs-xl);
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  line-height: 1.12;
   margin: 0 0 var(--sp-3);
 }
 .cs-header .cs-hero-img { margin: 0 0 var(--sp-3); }
@@ -373,7 +374,7 @@ a:focus-visible, button:focus-visible {
   color: var(--muted);
   margin-bottom: var(--sp-2);
 }
-.cs-section h2 { font-size: var(--fs-lg); margin-bottom: var(--sp-3); }
+.cs-section h2 { font-size: 1.5rem; line-height: 1.2; margin-bottom: var(--sp-3); }
 .cs-section h3 { font-size: var(--fs-md); margin: var(--sp-3) 0 var(--sp-2); }
 .cs-section p { color: var(--ink-soft); margin-bottom: var(--sp-2); }
 .cs-section p.lead { color: var(--ink); }
@@ -628,3 +629,4 @@ a:focus-visible, button:focus-visible {
 
 .case-voyc .figure-grid .ba-card.is-after .ba-label,
 .case-capitec .figure-grid .ba-card.is-after .ba-label { color: var(--accent); }
+
