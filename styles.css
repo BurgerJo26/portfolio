@@ -521,7 +521,7 @@ a:focus-visible, button:focus-visible {
   max-width: 640px;
   margin: 0 auto;
   text-align: center;
-  padding: var(--sp-5) 0 var(--sp-4);
+  padding: var(--sp-5) 0 var(--sp-3);
 }
 .about-hero h1 { font-size: var(--fs-xl); margin-bottom: var(--sp-3); }
 .about-hero .lede { color: var(--ink-soft); font-size: var(--fs-base); }
