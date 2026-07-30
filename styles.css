@@ -568,3 +568,8 @@ a:focus-visible, button:focus-visible {
 .section-intro .lead { font-size: var(--fs-sm); color: var(--muted); margin-top: var(--sp-2); }
 .email { font-weight: 500; }
 .reply { font-size: var(--fs-xs); color: var(--muted); }
+
+/* Behaviours driven by script.js */
+.topbar { position: sticky; top: 0; background: var(--bg); z-index: 10; }
+.topbar.is-scrolled { box-shadow: 0 1px 0 var(--line); }
+.cs-nav a.is-active { color: var(--ink); font-weight: 500; }
