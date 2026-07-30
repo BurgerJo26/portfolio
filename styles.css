@@ -630,3 +630,30 @@ a:focus-visible, button:focus-visible {
 .case-voyc .figure-grid .ba-card.is-after .ba-label,
 .case-capitec .figure-grid .ba-card.is-after .ba-label { color: var(--accent); }
 
+
+/* ---------- Problem cards ---------- */
+.problem-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--sp-2);
+  background: var(--accent-tint, var(--surface));
+  border: 1px solid var(--accent-line, var(--line));
+  border-radius: 16px;
+  padding: var(--sp-2);
+  margin: var(--sp-3) 0;
+}
+.problem-card {
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: var(--sp-3);
+}
+.problem-card .icon {
+  display: block;
+  width: 22px; height: 22px;
+  color: var(--accent, var(--ink));
+  margin-bottom: var(--sp-2);
+}
+.problem-card .icon svg { width: 100%; height: 100%; display: block; }
+.problem-card h4 { font-size: var(--fs-base); margin-bottom: 0.4rem; }
+.problem-card p { font-size: var(--fs-sm); color: var(--ink-soft); margin: 0; }
