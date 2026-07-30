@@ -581,3 +581,26 @@ a:focus-visible, button:focus-visible {
 .topbar { position: sticky; top: 0; background: var(--bg); z-index: 10; }
 .topbar.is-scrolled { box-shadow: 0 1px 0 var(--line); }
 .cs-nav a.is-active { color: var(--ink); font-weight: 500; }
+
+/* ---------- Per-case accent colours ---------- */
+.case-voyc { --accent: #4A1D96; }     /* 11.0:1 on white */
+.case-capitec { --accent: #0F5C8C; }  /* 7.2:1 on white */
+
+.case-voyc .cs-header h1,
+.case-capitec .cs-header h1,
+.case-voyc .cs-section h2,
+.case-capitec .cs-section h2 { color: var(--accent); }
+
+.case-voyc .stat .num,
+.case-capitec .stat .num { color: var(--accent); }
+
+.case-voyc .pull,
+.case-capitec .pull { border-left-color: var(--accent); }
+
+.case-voyc .cs-nav a:hover,
+.case-capitec .cs-nav a:hover,
+.case-voyc .cs-nav a.is-active,
+.case-capitec .cs-nav a.is-active { color: var(--accent); }
+
+.case-voyc .figure-grid .ba-card.is-after .ba-label,
+.case-capitec .figure-grid .ba-card.is-after .ba-label { color: var(--accent); }
