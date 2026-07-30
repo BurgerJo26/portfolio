@@ -198,13 +198,23 @@ a:focus-visible, button:focus-visible {
   gap: var(--sp-3);
 }
 .home-about h2 { font-size: var(--fs-lg); text-align: center; margin-bottom: var(--sp-2); }
+.about-row {
+  display: grid;
+  grid-template-columns: 132px 1fr;
+  gap: 0.6rem;
+  align-items: stretch;
+}
 .about-photo {
-  border-radius: var(--r-card);
+  border-radius: 12px;
   border: 1px solid var(--line);
   overflow: hidden;
   background: var(--surface);
 }
-.about-photo img { width: 100%; height: auto; }
+.about-photo img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 560px) {
+  .about-row { grid-template-columns: 1fr; }
+  .about-photo { height: 220px; }
+}
 .about-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
