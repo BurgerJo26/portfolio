@@ -705,3 +705,12 @@ a:focus-visible, button:focus-visible {
   gap: 0.4rem;
   margin: var(--sp-2) 0 var(--sp-3);
 }
+
+/* Numbered card headings: space the number away from the title */
+.lesson h4 .num,
+.callout h4 .num,
+.problem-card h4 .num {
+  margin-right: 0.5rem;
+  color: var(--accent, var(--muted));
+  font-variant-numeric: tabular-nums;
+}

@@ -101,16 +101,24 @@
         <section id="problem" class="cs-section">
           <span class="eyebrow">01 · The problem</span>
           <h2>The portal was overloading users at the <em>worst</em> moments.</h2>
-          <p>User research with Ipsos surfaced a consistent pattern. Users found the portal's navigation confusing and its terminology inconsistent with how they thought about their own work. The iconography didn't help either. But the most damaging finding was specific to the flows I'd end up owning.</p>
+          <p class="lead">Ipsos testing surfaced confusing navigation, terminology that did not match how users thought about their work, and unhelpful iconography. The most damaging finding was behavioural: users were choosing the slower path on purpose.</p>
 
-          <p>Users were <em>choosing the slower path on purpose</em>:</p>
-          <ul>
-            <li>Paying beneficiaries <strong>one at a time</strong> instead of using the bulk feature, because the bulk feature scared them</li>
-            <li>Avoiding group payments entirely because the UI "didn't feel safe"</li>
-            <li>Falling back on branch staff for tasks the portal was explicitly designed to let them self-serve</li>
-          </ul>
+          <div class="callouts">
+            <div class="callout">
+              <h4>Paying one at a time</h4>
+              <p>Beneficiaries paid individually rather than in bulk, because the bulk feature scared them.</p>
+            </div>
+            <div class="callout">
+              <h4>Avoiding group payments</h4>
+              <p>The feature skipped entirely, because the interface did not feel safe to use.</p>
+            </div>
+            <div class="callout">
+              <h4>Falling back on the branch</h4>
+              <p>Branch staff used for tasks the portal was built to let people do themselves.</p>
+            </div>
+          </div>
 
-          <p>In regulated fintech, that's not just a usability problem. It's a business one. A feature nobody uses is a feature that costs money to maintain and earns nothing back.</p>
+          <p>In regulated fintech that is a business problem, not just a usability one. A feature nobody uses costs money to maintain and earns nothing back.</p>
 
           <h3>Three problems on the beneficiary group screen</h3>
           <p>When we annotated the original beneficiary group screen with the Ipsos team, three distinct issues separated out cleanly:</p>
@@ -141,29 +149,37 @@
           </div>
 
           <h3>The multi-payment flow had its own problems</h3>
-          <p>The multi-payment screen was the highest-stakes flow in the portal, and the one users were most actively avoiding. Three issues compounded the avoidance:</p>
+          <p>The highest-stakes screen in the portal, and the one users avoided most.</p>
 
           <div class="figure">
             <img src="images/capitec-multipayment-before.png" alt="The legacy multi-payment screen in the original navy and red branding, showing rows of payments with separate fields for Payment From, Beneficiary, Reference, Amount, and Statement Narrative, and a red callout pointing at one of the From-account fields explaining 'Select an account if payment for the beneficiary to be from a different account'">
           </div>
           <p class="figure-caption">The legacy multi-payment screen, with a red callout we added during research to mark one of the most-confused interactions. Users described the layout as "too many decisions per row to feel safe."</p>
 
-          <ul>
-            <li><strong>Pay one by one.</strong> Users would rather make ten individual payments than risk one mistake on a multi-payment that could send the wrong amount to the wrong account.</li>
-            <li><strong>Too many actions on one screen.</strong> Account selection, amounts, references, statement narratives, and per-row deletion all competed for attention in the same horizontal row.</li>
-            <li><strong>Misleading icons.</strong> The icons next to fields didn't carry the meanings users expected. People weren't sure what they did until they clicked, and clicking felt risky.</li>
-          </ul>
+          <div class="callouts">
+            <div class="callout">
+              <h4>Pay one by one</h4>
+              <p>Ten individual payments felt safer than one mistake sending the wrong amount to the wrong account.</p>
+            </div>
+            <div class="callout">
+              <h4>Too many actions per row</h4>
+              <p>Account, amount, reference, narrative and deletion all competed in the same horizontal row.</p>
+            </div>
+            <div class="callout">
+              <h4>Misleading icons</h4>
+              <p>Icons did not carry the meaning users expected, and clicking to find out felt risky.</p>
+            </div>
+          </div>
         </section>
 
         <!-- Discovery -->
         <section id="discovery" class="cs-section">
           <span class="eyebrow">02 · Discovery</span>
           <h2>Ipsos testing first, then iteration in the open.</h2>
-          <p class="lead">We partnered with Ipsos for the user testing. They were the right partner for a regulated context: methodical, structured, and used to debriefing findings to mixed audiences of designers, business analysts, and stakeholders.</p>
-          <p>The testing surfaced what people were saying about the portal, but more usefully, it surfaced what they were doing despite saying it. People said they trusted the bulk-payment feature. Then they used it once and went back to single payments for the rest of the month. That gap between stated and observed behaviour is where the real design work lives.</p>
+          <p class="lead">Testing with Ipsos surfaced what people said about the portal, and more usefully what they did despite saying it. People said they trusted the bulk-payment feature, then used it once and went back to single payments for the rest of the month. That gap between stated and observed behaviour is where the real work lives.</p>
 
           <h3>Brainstorming the alternatives in the open</h3>
-          <p>Once we had the Ipsos findings, the three of us on the design team worked through the alternatives in InVision Freehand. Annotating directly on screenshots, marking what to remove, deciding what to redirect, talking through every "what if we just..." until the team converged on a direction.</p>
+          <p>The three of us on the design team worked through alternatives in InVision Freehand, annotating screenshots directly until we converged on a direction.</p>
 
           <div class="figure">
             <img src="images/capitec-brainstorming.png" alt="An InVision Freehand whiteboard showing three iterations of the redesigned beneficiary group screen, with handwritten annotations: 'Manage group' added in orange, 'Add Beneficiaries' button crossed out, 'SAVE' label added in dark grey, 'Select an action' annotated below the table, and 'Add Beneficiaries / Remove Beneficiaries' shown as separate options at the bottom of one variant">
@@ -175,28 +191,32 @@
         <section id="decision-1" class="cs-section solution">
           <span class="label">Design Decision 01 · Beneficiary groups</span>
           <h3>Fewer decisions, presented in <em>order.</em></h3>
-          <p class="lead">The original screen asked users to do everything at once. Name the group, see current members, see all available beneficiaries, add, remove, save. All on a single page where the same checkbox pattern meant different things depending on which section you were in.</p>
-
-          <p>We made three specific changes:</p>
-
-          <h4>01. Limit simultaneous actions on screen</h4>
-          <p>Only the actions relevant to the current task stay visible at any moment. The "Add Beneficiaries" button moved out of the top action bar and into a dedicated entry point. The page became a focused view, not a control panel.</p>
+          <p class="lead">The original screen asked users to do everything at once: name the group, see current members, see every available beneficiary, add, remove, save. All on one page, where the same checkbox meant different things depending on where it sat.</p>
 
           <div class="figure is-wide">
             <img src="images/capitec-beneficiary-focused.png" alt="The redesigned focused view of a beneficiary group called Cleaning Staff, showing a clean table of five beneficiaries with columns for Beneficiary Name, Account Number, Their Reference, and My Reference. Two prominent buttons at the top: outlined Remove Beneficiaries and primary Add Beneficiaries. The clutter and competing actions of the original are gone.">
           </div>
           <p class="figure-caption">The focused view. The screen now answers a single question per visit: who's in this group? Adding and removing are entry points to separate flows, not on-screen competitors.</p>
 
-          <h4>02. Move destructive actions into their own modal flows</h4>
-          <p>"Add Beneficiaries" and "Remove Beneficiaries" each became their own focused modal with a numbered stepper. Users could no longer accidentally end up doing the wrong thing because their attention was contained to one task at a time.</p>
-
           <div class="figure is-wide">
             <img src="images/capitec-beneficiary-modals.png" alt="The Add Beneficiaries modal dialog, showing a two-step stepper at the top (1 Add Beneficiaries highlighted, 2 Confirm grey), a notice explaining there should be at least 2 beneficiaries within a group, a search field, and a scrollable table of available beneficiaries with checkboxes. Cancel and Continue buttons at the bottom right.">
           </div>
           <p class="figure-caption">The Add Beneficiaries modal. A clear stepper sets expectations. A search field handles scale (these tables can run to thousands of rows). And the Continue button only commits to the next step, not the final action. Users can change their mind cheaply.</p>
 
-          <h4>03. Standardise component behaviour</h4>
-          <p>One checkbox pattern, one meaning. One add button, one flow. One remove affordance, one flow. The payoff is less visible than a redesigned layout, but it's where trust actually lives. When components behave predictably, users stop second-guessing themselves.</p>
+          <div class="callouts">
+            <div class="callout">
+              <h4><span class="num">01</span>Fewer actions on screen</h4>
+              <p>Only what the current task needs stays visible. The page became a focused view, not a control panel.</p>
+            </div>
+            <div class="callout">
+              <h4><span class="num">02</span>Destructive actions in their own flow</h4>
+              <p>Add and Remove each became a modal with a numbered stepper, so attention stays on one task.</p>
+            </div>
+            <div class="callout">
+              <h4><span class="num">03</span>One pattern, one meaning</h4>
+              <p>Less visible than a new layout, but it is where trust lives. Predictable components stop users second-guessing.</p>
+            </div>
+          </div>
         </section>
 
         <!-- DESIGN DECISION 2: Multi-payments -->
@@ -205,13 +225,18 @@
           <h3>Building trust through <em>structure.</em></h3>
           <p class="lead">The multi-payment flow was the screen most users were avoiding. Mistakes here meant real money moving to the wrong account. The redesign needed to make the right action feel obviously safer than the workaround.</p>
 
-          <p>Two structural changes did most of the heavy lifting. The hero image at the top of this case study shows the result.</p>
+          <p>Two structural changes did most of the work. The hero image at the top of this case study shows the result.</p>
 
-          <h4>01. Steppers to break the task into phases</h4>
-          <p>A three-step progression (<em>Payment Options</em> → <em>Beneficiaries</em> → <em>Confirm</em>) lets users focus on one decision at a time. Error-checking also became cheaper. If something looked wrong at the confirm step, users could step back without losing the rest of their work.</p>
-
-          <h4>02. Table-format data with explicit, labelled actions</h4>
-          <p>Every beneficiary row shows exactly what's being sent, from which account, with which reference. The actions available are explicitly named ("Remove", "Edit") rather than hidden behind misleading icons. The total updates live as users add and edit rows. Nothing here is invisible or implicit.</p>
+          <div class="callouts">
+            <div class="callout">
+              <h4><span class="num">01</span>Steppers to phase the task</h4>
+              <p>Payment Options, then Beneficiaries, then Confirm. One decision at a time, and stepping back costs nothing.</p>
+            </div>
+            <div class="callout">
+              <h4><span class="num">02</span>Tables with named actions</h4>
+              <p>Every row shows what is being sent, from where, with which reference. Remove and Edit are labelled, not hidden in icons.</p>
+            </div>
+          </div>
 
           <div class="pull">
             <p>"The redesign wasn't about making it prettier. It was about letting users do the right thing without a knot in their stomach."</p>
@@ -223,15 +248,24 @@
           <span class="eyebrow">03 · Impact</span>
           <h2>What changed for the people using it.</h2>
           <p class="lead">I don't have hard before-and-after numbers from this project. Capitec's instrumentation didn't surface the metrics we'd have wanted, and the rebrand-and-rebuild ran on a timeline that didn't allow for proper longitudinal comparison.</p>
-          <p>What I do have is the qualitative side: what changed for the people using these screens, in their own words from follow-up testing.</p>
+          <p>What I do have is the qualitative side, from follow-up testing and the client experience team.</p>
 
-          <ul>
-            <li><strong>Users stopped avoiding multi-payments.</strong> The "I'd rather pay one by one" pattern faded once the stepper made the path forward obvious. The avoidance behaviour was the clearest measurable signal we'd been chasing, and it changed.</li>
-            <li><strong>Branch-call escalations on these flows dropped.</strong> The Capitec client experience team reported fewer "I think I made a mistake on a payment" calls in the months after rollout, though they didn't track this with the rigour I'd have liked.</li>
-            <li><strong>The components got reused.</strong> The patterns we set on these two flows (modal stepper for destructive actions, three-step confirm for high-value transactions) became the reference implementations for other parts of the portal we didn't directly touch.</li>
-          </ul>
+          <div class="callouts">
+            <div class="callout">
+              <h4>Avoidance faded</h4>
+              <p>The "I would rather pay one by one" pattern dropped away once the stepper made the path obvious.</p>
+            </div>
+            <div class="callout">
+              <h4>Fewer worried calls</h4>
+              <p>The client experience team reported fewer "I think I made a mistake" calls after rollout.</p>
+            </div>
+            <div class="callout">
+              <h4>Patterns got reused</h4>
+              <p>The modal stepper and three-step confirm became reference implementations elsewhere in the portal.</p>
+            </div>
+          </div>
 
-          <p>If I were running this project today, I'd insist on success metrics being instrumented up front. That's a real lesson, and it's reflected below.</p>
+          <p>Running this today, I would insist on success metrics being instrumented up front.</p>
         </section>
 
         <!-- LESSONS -->
@@ -242,19 +276,19 @@
           <div class="lessons">
             <div class="lesson">
               <h4><span class="num">01</span>Consistency is invisible, until it isn't</h4>
-              <p>The biggest wins on this project weren't new patterns. They were the same pattern applied everywhere. When every checkbox means the same thing, users stop spending cognitive energy on the interface and start spending it on their actual task. In regulated domains especially, that trade is everything.</p>
+              <p>The biggest wins were not new patterns. They were the same pattern applied everywhere. When every checkbox means the same thing, users spend their attention on the task instead of the interface.</p>
             </div>
             <div class="lesson">
               <h4><span class="num">02</span>Enterprise UX is invisible work</h4>
-              <p>Rebuilding a banking portal meant working with business analysts, system analysts, account managers, developers, and a rotating cast of stakeholders (sometimes without a product owner present). The design was only as good as the documentation, the handoffs, and the patience to re-ground the team around users every time priorities drifted.</p>
+              <p>Analysts, developers, account managers, and a rotating cast of stakeholders, sometimes with no product owner in the room. The design was only ever as good as the documentation and the handoffs.</p>
             </div>
             <div class="lesson">
               <h4><span class="num">03</span>Testing is the cheapest honesty</h4>
-              <p>Working with Ipsos meant I couldn't argue my way past a pattern users couldn't parse. It grounded conversations with stakeholders who wanted to move faster than the evidence warranted, and it earned trust over time for the design decisions that followed.</p>
+              <p>Testing with Ipsos meant I could not argue my way past a pattern users could not parse. It also settled debates with stakeholders who wanted to move faster than the evidence allowed.</p>
             </div>
             <div class="lesson">
               <h4><span class="num">04</span>Instrument up front, or accept the qualitative story</h4>
-              <p>This project shipped without proper success metrics in place, which means I tell its story qualitatively rather than with numbers. Today I'd insist on baseline instrumentation before a single screen was redesigned. The qualitative story is real, but it's harder to defend in a review. Always build the measurement in.</p>
+              <p>This shipped without success metrics in place, so I tell its story qualitatively. Today I would insist on baseline instrumentation before redesigning a single screen. The qualitative story is real, but harder to defend in a review.</p>
             </div>
           </div>
         </section>
