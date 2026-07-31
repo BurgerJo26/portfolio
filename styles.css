@@ -677,3 +677,31 @@ a:focus-visible, button:focus-visible {
   flex-shrink: 0;
 }
 .about-portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* ---------- Section callout cards (Storyline pattern) ---------- */
+.callouts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--sp-2);
+  background: var(--accent-tint, var(--surface));
+  border: 1px solid var(--accent-line, var(--line));
+  border-radius: 16px;
+  padding: var(--sp-2);
+  margin: var(--sp-3) 0;
+}
+.callout {
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: var(--sp-3);
+}
+.callout h4 { font-size: var(--fs-base); margin-bottom: 0.4rem; }
+.callout p { font-size: var(--fs-sm); color: var(--ink-soft); margin: 0; }
+
+/* Theme chips */
+.theme-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: var(--sp-2) 0 var(--sp-3);
+}

@@ -137,8 +137,7 @@
         <section id="discovery" class="cs-section">
           <span class="eyebrow">02 · Discovery</span>
           <h2>Six research moves to <em>pinpoint</em> the friction.</h2>
-          <p class="lead">To pinpoint where users struggled, I conducted six targeted research activities: attending onboarding sessions, conducting user interviews, analysing support tickets, attending stakeholder workshops, affinity mapping, and running a prioritisation session.</p>
-          <p>What this surfaced was a fragmented manual process delaying time-to-value and burning out the support team. The insights confirmed that a self-service guided flow would better fit users' mental models and meet a real business need.</p>
+          <p class="lead">Six research activities: onboarding sessions, user interviews, support ticket analysis, stakeholder workshops, affinity mapping and a prioritisation session. What surfaced was a fragmented manual process that delayed value and burnt out the support team.</p>
 
           <h3>What I learned, from whom</h3>
 
@@ -187,7 +186,15 @@
           </div>
 
           <h3>Visual mapping of user pain points</h3>
-          <p>I clustered everything we learned into five themes: Missing or Unclear Guidance, Support Queries &amp; Bottlenecks, Usability Issues &amp; Confusion, Time-to-Value Delays, and Opportunities &amp; User Suggestions. Surfacing the patterns this way made them visible to the rest of the team.</p>
+          <p>I clustered the findings into five themes, which made the patterns visible to the rest of the team.</p>
+
+          <div class="theme-chips">
+            <span class="chip">Missing or unclear guidance</span>
+            <span class="chip">Support queries and bottlenecks</span>
+            <span class="chip">Usability issues and confusion</span>
+            <span class="chip">Time-to-value delays</span>
+            <span class="chip">Opportunities and suggestions</span>
+          </div>
 
           <div class="figure">
             <img src="images/voyc-figjam-pain-points.png" alt="FigJam affinity map clustering user feedback into five themed groups: Missing or Unclear Guidance, Support Queries and Bottlenecks, Usability Issues and Confusion, Time-to-Value Delays, and Opportunities and User Suggestions">
@@ -199,25 +206,34 @@
         <section id="decision-1" class="cs-section solution">
           <span class="label">Design Decision 01 · Manual onboarding bottlenecks</span>
           <h3>Validating the new flow with <em>iterative</em> service-level testing.</h3>
-          <p class="lead">Once the discovery synthesis showed us where things were breaking down, the next move was to design a self-service flow that fit how customers actually thought about getting started. And then validate it, before committing to a build.</p>
-
-          <h4>Iterative testing: validating the new flow</h4>
-          <p>I drafted an initial onboarding flow and we tested it during manual onboarding sessions led by the Learning Experience team. The hands-on format let us adjust the process in real time. It confirmed what worked and what didn't, and saved engineering effort by catching gaps in the service before they were ever built.</p>
-
-          <p>The flowchart went through three iterations during these sessions, each one shaped by real customer feedback:</p>
+          <p class="lead">I drafted a self-service flow around how customers actually thought about getting started, then tested it in live onboarding sessions with the Learning Experience team before any of it was built.</p>
 
           <div class="figure is-portrait contain">
             <img src="images/voyc-service-flowchart.png" alt="Three iterations of the onboarding service flowchart, from a complex purple decision tree, through a four-step Miro plan with score milestones, into a final structured flow with Step 1 Preparing Organisation, Step 2 Channel Set Up, Step 3 Initial Configuration, and Step 4 Refine and Calibrate">
           </div>
           <p class="figure-caption">Flow chart validation: three iterations of the onboarding flow, refined live during sessions with the Learning Experience team.</p>
+
+          <div class="callouts">
+            <div class="callout">
+              <h4>Tested as a service first</h4>
+              <p>Real customers walked the flow in guided sessions while it was still a flowchart.</p>
+            </div>
+            <div class="callout">
+              <h4>Three iterations, live</h4>
+              <p>Each round was reshaped by customer feedback in the session rather than after it.</p>
+            </div>
+            <div class="callout">
+              <h4>Build effort saved</h4>
+              <p>Gaps in the service surfaced before engineering wrote any of it.</p>
+            </div>
+          </div>
         </section>
 
         <!-- DESIGN DECISION 2 -->
         <section id="decision-2" class="cs-section solution">
           <span class="label">Design Decision 02 · Insufficient in-app guidance</span>
           <h3>How might we <em>embed</em> help content where users actually need it?</h3>
-          <p class="lead">Users got stuck during onboarding because the guidance wasn't where they needed it. Without contextual help inside the product, they had to fall back on customer support, which slowed them down and frustrated them.</p>
-          <p>I wanted to give users the tools to troubleshoot on their own. We embedded contextual tips and clear setup instructions directly inside the relevant screens, so the help came to the user instead of the other way around. The change took load off support, sped up time-to-value, and made the experience feel less like a maze.</p>
+          <p class="lead">Guidance was not where users needed it, so getting stuck meant contacting support. We embedded tips and setup instructions directly into the relevant screens: the help now comes to the user rather than the other way around.</p>
 
           <!-- Before/After grid -->
           <div class="figure-grid">
@@ -242,8 +258,7 @@
         <section id="decision-3" class="cs-section solution">
           <span class="label">Design Decision 03 · Limited onboarding visibility</span>
           <h3>Final implementation: an <em>in-app onboarding checklist</em>.</h3>
-          <p class="lead">Users had no view into their onboarding progress, which left them feeling lost and reaching for support. They couldn't see what was done, what was next, or how close they were to the finish line.</p>
-          <p>I designed a transparent dashboard with real-time progress tracking and clear next steps. Through research and iterative testing with the Learning Experience team, this turned into an in-app checklist that put users back in control of their own setup.</p>
+          <p class="lead">Users could not see what was done, what was next, or how close they were to finishing. I designed a progress dashboard with clear next steps, which iterative testing turned into an in-app checklist.</p>
 
           <div class="figure is-wide">
             <img src="images/voyc-checklist-implementation.png" alt="Side-by-side comparison of the onboarding checklist at 0 percent and 30 percent completion, with annotations marking the four key components: 1 Onboarding Checklist, 2 Completion Score, 3 Effort Indicators, 4 Floating Checklist">
@@ -293,7 +308,7 @@
             </div>
           </div>
 
-          <p>The numbers matter because they represent real customers reaching real value faster, and a Customer Success team that finally had time for strategic work instead of setup calls. Critically, the change stuck. The self-service flow scaled cleanly with new customer growth, and Customer Success was freed up to do the strategic work the product's growth needed.</p>
+          <p>Behind the numbers: customers reaching value faster, and a Customer Success team with time for strategic work instead of setup calls. The change also held. The self-service flow scaled cleanly as customer numbers grew.</p>
         </section>
 
         <!-- LESSONS -->
