@@ -714,3 +714,43 @@ a:focus-visible, button:focus-visible {
   color: var(--accent, var(--muted));
   font-variant-numeric: tabular-nums;
 }
+
+/* ---------- Hover to enlarge: full-width preview over the grid ---------- */
+@media (hover: hover) and (pointer: fine) {
+  .figure-grid { position: relative; }
+  .figure-grid .ba-card,
+  .figure-grid .ba-card .ba-image { position: static; }
+
+  /* zoom hint badge */
+  .figure-grid .ba-card .ba-label { position: relative; }
+  .figure-grid .ba-card .ba-label::after {
+    content: "";
+    position: absolute;
+    right: var(--sp-3); top: 50%;
+    transform: translateY(-50%);
+    width: 18px; height: 18px;
+    opacity: 0.55;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2316181D' stroke-width='2' stroke-linecap='round'><circle cx='11' cy='11' r='7'/><path d='M20 20l-4-4M11 8v6M8 11h6'/></svg>");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+  }
+
+  .figure-grid .ba-card:hover .ba-image img,
+  .figure-grid .ba-card:focus-within .ba-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-height: 78vh;
+    object-fit: contain;
+    padding: var(--sp-3);
+    background: #FFFFFF;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: 0 28px 70px rgba(22, 24, 29, 0.3);
+    z-index: 40;
+    pointer-events: none;
+  }
+}
